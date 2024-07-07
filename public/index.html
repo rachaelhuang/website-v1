@@ -24,11 +24,62 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+
+    <title>Rachael Huang - UI/UX, Product Design, Full Stack Development </title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width-device width, initial-scale=1">
+
   </head>
+
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <!------------------- navbar ------------------->
+    <header class = "header" data-header>
+      <div class="container">
+        <a href = "#rachaelhuang.com"> <!-- DOMAIN NAME -->
+          <img src = "../assets/headerimage.png" alt = "Rachael Huang" class = "logo" >
+        </a>
+        <nav class="navbar" data-navbar>
+            <a href="#work">Work</a></li>
+            <a href="#about">About</a></li>
+            <a href="#resume">Resume</a></li>
+        </nav>
+      </div>
+    </header>
+          
+
+  <!------------------- splash page ------------------->
+  <section class="splash">
+    <div class="splash-content">
+      <p>Hey! I'm Rachael, a product designer and computer science student at Dartmouth</p>
+      <a href="#main-content" class="work-button">See my work</a>
+    </div>
+  </section>
+
+
+  <!------------------- featured projects section ------------------->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <a href="project1.html" class="project-thumbnail"> <!-- LINK TO PROJECT PAGE -->
+          <img src="path/to/project1-thumbnail.jpg" alt="Project 1">
+          <div class="project-title">Project 1</div>
+        </a>
+        <a href="project2.html" class="project-thumbnail">
+          <img src="path/to/project2-thumbnail.jpg" alt="Project 2">
+          <div class="project-title">Project 2</div>
+        </a>
+        <a href="project3.html" class="project-thumbnail">
+          <img src="path/to/project3-thumbnail.jpg" alt="Project 3">
+          <div class="project-title">Project 3</div>
+        </a>
+        <!-- add more projects here -->
+      </div>
+    </div>
+  </section>
+
+  
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -40,4 +91,6 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+
+
 </html>

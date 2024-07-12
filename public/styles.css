@@ -133,4 +133,5 @@ body {
   /* border-radius: 10px; rounded corners */
   margin: 0 auto; /* Optional: to center the image */
   display: block;
+  padding: 20px;
 }

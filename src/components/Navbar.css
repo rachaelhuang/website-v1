@@ -4,9 +4,9 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff; /* Change this to match your design */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
-    z-index: 1000; /* Ensure it stays above other content */
+    /* background-color: #fff; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
   }
   
   .navbar-container {
@@ -23,7 +23,7 @@
   .navbar-menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     margin: 0;
     padding: 0;
   }
@@ -34,3 +34,8 @@
     font-weight: bold;
   }
   
+  .navbar-menu a:hover {
+    color: #ffcc00; /* Change text color on hover */
+    border: 2px solid #ffcc00; /* Border color and width */
+    border-radius: 4px; /* Rounded corners (optional) */
+  }

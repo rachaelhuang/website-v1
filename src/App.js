@@ -11,18 +11,15 @@ import About from './pages/about.js';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-
       <Router>
-
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
           <Route path="/play" element={<Play />} />
           <Route path="/about" element={<About />} />
         </Routes>
-        </Router>
-
+      </Router>
     </div>
   );
 }

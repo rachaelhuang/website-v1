@@ -1,0 +1,70 @@
+.splash-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f4f4f4; /* Change this to your desired background color */
+    color: #333;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.splash-screen h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'DM Sans',
+}
+
+.splash-screen p {
+    font-size: 1.5rem;
+    font-family: 'DM Sans',
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.projects-section {
+    padding: 50px;
+    background: #ffffff;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column; /* Stack projects vertically */
+    gap: 40px; /* Increased gap between projects */
+}
+
+.project-item {
+    display: flex;
+    flex-direction: row; /* Align text and image side by side */
+    align-items: center;
+    gap: 20px; /* Space between text and image */
+}
+
+.project-item .description {
+    /* background: #f9f9f9; */
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    flex: 1; /* take up remaining space */
+    max-width: 50%; /* Limit the width of the description */
+    text-align: left;
+}
+
+.project-item .description h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.project-item .description p {
+    margin: 10px 0 0;
+}
+
+.project-item img {
+    max-width: 50%; /* Limit the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ddd; /* Optional: Add a border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a lifted effect */
+}

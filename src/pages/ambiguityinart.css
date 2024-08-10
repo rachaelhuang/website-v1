@@ -36,18 +36,18 @@
   }
   
   .information {
-    display: flex; /* Added */
-    flex-direction: row; /* Ensure this is set to row */
+    display: flex;
+    flex-direction: row;
     padding: 2rem;
     background-color: #f4f4f4;
     color: #333;
-    justify-content: space-around; /* Distribute space evenly */
+    justify-content: space-around;
   }
   
   .info-section {
-    margin-bottom: 0; /* Removed bottom margin */
-    flex: 1; /* Allow each section to take equal space */
-    text-align: center; /* Center text in each section */
+    margin-bottom: 0;
+    flex: 1;
+    text-align: center;
   }
   
   .info-section p {
@@ -60,7 +60,7 @@
     font-size: 1rem;
     margin: 0;
   }
-
+  
   .overview {
     margin: 2rem;
   }
@@ -68,20 +68,38 @@
   .final-product-teaser {
     margin: 2rem;
   }
-
+  
   .problem-statement {
     margin: 2rem;
   }
-
+  
   .project-purpose {
     margin: 2rem;
   }
-
+  
   .user-research {
     margin: 2rem;
   }
-
-  .case-study-video {
-    width: 20%;
-    height: 20%;
+  
+  .video-container {
+    position: relative;
+    width: 30%; /* container width relative to parent */
+    margin: 0 auto;
   }
+  
+  .case-study-video {
+    width: 100%; 
+    height: auto;
+    border-radius: 20px 20px 25px 25px; /* Adjust radius values as needed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.91); /* adjust to scale vid */
+  }
+  
+  .case-study-video-frame {
+    position: relative;
+    width: 100%; 
+    height: auto;
+  }
+  

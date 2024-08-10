@@ -13,12 +13,12 @@
 .splash-screen h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    font-family: 'DM Sans',
+    font-family: 'DM Sans', sans-serif;
 }
 
 .splash-screen p {
     font-size: 1.5rem;
-    font-family: 'DM Sans',
+    font-family: 'DM Sans', sans-serif;
 }
 
 @keyframes fadeIn {
@@ -39,16 +39,14 @@
 
 .project-item {
     display: flex;
-    flex-direction: row; /* Align text and image side by side */
+    flex-direction: column; /* Stack description and image vertically */
     align-items: center;
-    gap: 20px; /* Space between text and image */
+    text-align: center; /* Center text below images */
+    gap: 20px; /* Space between elements */
 }
 
 .project-item .description {
-    /* background: #f9f9f9; */
     padding: 20px;
-    /* border: 1px solid #ddd; */
-    flex: 1; /* take up remaining space */
     max-width: 50%; /* Limit the width of the description */
     text-align: left;
 }
@@ -67,4 +65,14 @@
     height: auto; /* Maintain aspect ratio */
     border: 1px solid #ddd; /* Optional: Add a border around the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a lifted effect */
+}
+
+.project-item a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin-top: 10px; /* Space above the link */
+}
+
+.project-item a:hover {
+    text-decoration: underline; /* Underline on hover */
 }

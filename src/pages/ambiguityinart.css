@@ -1,0 +1,87 @@
+.case-study {
+    font-family: 'DM Sans';
+    text-align: left;
+  }
+  
+  .banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    color: white;
+  }
+  
+  .banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .banner-content {
+    text-align: center;
+  }
+  
+  .banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-content p {
+    font-size: 1.25rem;
+  }
+  
+  .information {
+    display: flex; /* Added */
+    flex-direction: row; /* Ensure this is set to row */
+    padding: 2rem;
+    background-color: #f4f4f4;
+    color: #333;
+    justify-content: space-around; /* Distribute space evenly */
+  }
+  
+  .info-section {
+    margin-bottom: 0; /* Removed bottom margin */
+    flex: 1; /* Allow each section to take equal space */
+    text-align: center; /* Center text in each section */
+  }
+  
+  .info-section p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info-section h5 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .overview {
+    margin: 2rem;
+  }
+  
+  .final-product-teaser {
+    margin: 2rem;
+  }
+
+  .problem-statement {
+    margin: 2rem;
+  }
+
+  .project-purpose {
+    margin: 2rem;
+  }
+
+  .user-research {
+    margin: 2rem;
+  }
+
+  .case-study-video {
+    width: 20%;
+    height: 20%;
+  }

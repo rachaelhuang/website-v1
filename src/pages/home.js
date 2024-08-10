@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './home.css';
 
 function Home() {
@@ -18,7 +19,10 @@ function Home() {
               <h3>Ambiguity in Art</h3>
               <p>Facilitating a neuroscience research study through artwork interpretations by museum visitors.</p>
             </div>
-            <img src="/assets/ambiguityinart/projthumbnail.png" alt="Ambiguity in Art Project" />
+                <img src="/assets/ambiguityinart/projthumbnail.png" alt="Ambiguity in Art Project" />
+            <Link to="/ambiguityinart">
+                <p>See the story</p>
+            </Link>
           </div>
 
           <div className="project-item">
@@ -27,6 +31,9 @@ function Home() {
               <p>Allowing college students to share reviews about dining hall meals and get personalized recommendations.</p>
             </div>
             <img src="/assets/dineable/projthumbnail.png" alt="Dineable Project" />
+            <Link to="/dineable">
+                <p>See the story</p>
+            </Link>
           </div>
 
           {/* <div className="project-item">

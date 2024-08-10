@@ -6,7 +6,8 @@ import Home from './pages/home.js';
 import Work from './pages/work.js';
 import Play from './pages/play.js';
 import About from './pages/about.js';
-
+import AmbiguityInArt from './pages/ambiguityinart.js';
+import Dineable from './pages/dineable.js';
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/play" element={<Play />} />
           <Route path="/about" element={<About />} />
+
+          <Route path="/ambiguityinart" element={<AmbiguityInArt />} />
+          <Route path="/ambiguityinart" element={<Dineable />} />
+
         </Routes>
       </Router>
     </div>

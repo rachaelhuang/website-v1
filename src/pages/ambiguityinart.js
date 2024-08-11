@@ -15,45 +15,53 @@ function AmbiguityInArt() {
       <section className="information">
         <div className="info-section">
           <p>Timeline</p>
-          <h5>10 weeks (March-May 2024); ongoing through summer 2024</h5>
+          <p>10 weeks (March-May 2024); development ongoing through summer 2024</p>
+        </div>
+        <div className="info-section">
+          <p>Role</p>
+          <p>Designer (UI/UX, graphics) </p>
         </div>
         <div className="info-section">
           <p>Team</p>
-          <h5>4 Designers</h5>
-          <h5>4 Developers</h5>
-          <h5>1 Project Manager</h5>
+          <p>4 Designers</p>
+          <p>4 Developers</p>
+          <p>1 Project Manager</p>
         </div>
         <div className="info-section">
           <p>Tools</p>
-          <h5>Figma</h5>
-          <h5>Adobe Photoshop</h5>
+          <p>Figma</p>
+          <p>Adobe Photoshop</p>
         </div>
         <div className="info-section">
           <p>Skills</p>
-          <h5>Interaction Design</h5>
-          <h5>Prototyping</h5>
-          <h5>Visual Design</h5>
-          <h5>Research</h5>
+          <p>Interaction Design</p>
+          <p>Prototyping</p>
+          <p>Visual Design</p>
+          <p>User Research</p>
         </div>
       </section>
 
       <section className="overview">
         <h2>Project Overview</h2>
-        <p>Different people can see the same image, but reach vastly different conclusions. The FINN Lab, a Neuroscience lab at Dartmouth, is studying the implications of those differences in perception, and how they may inform phenomena such as mental health and politics.</p>
-        <ul>
-          <li>Our team was tasked with designing and creating a mobile app that allows museum visitors to interpret artworks in the Hood Museum of Art through Mad-Libs style inputs.</li>
-        </ul>
+        <p>Different people can see the same image, but reach vastly different conclusions. The <a href="https://thefinnlab.github.io" target="_blank" rel="noopener noreferrer">FINN Lab</a>, a neuroscience lab at Dartmouth, is studying the implications of those differences in perception, and how they may inform phenomena such as mental health and politics.</p>
+        <p>Previously, the FINN Lab team handed out pen-and-paper surveys to subjects in a controlled lab setting to gather data.
+            However, they sought to expand their data collection via visitors of Dartmouth's art museum, the Hood Museum of Art.
+            They envisioned a digital 'edutainment' experience where museum-goers could have a fun, interactive experience while simultaneously learning about artwork.
+            Thus, our team was tasked with designing and creating a mobile app that allows museum visitors to interpret artworks in the Hood Museum through Mad-Libs style inputs.</p>
+       
       </section>
 
       <section className="final-product-teaser">
         <h2>Product Demo</h2>
-        <p>Here's a sneak peek of the final product. Scroll down to see the full case study.</p>
+        <p>A sneak peek of the final prototype and some of its functionalities. Scroll to see the full story below! </p>
         
-        <div className="video-container">
+        <div className="demo-section-1"> 
+         <div className="video-container">
           <video autoPlay loop muted className="case-study-video">
             <source src="/assets/ambiguityinart/ambiguityinart_demovid1.mov" type="video/mp4" />
           </video>
           <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+          </div>
         </div>
 
         <div className="video-container">
@@ -62,12 +70,6 @@ function AmbiguityInArt() {
           </video>
           <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
         </div>
-
-      </section>
-
-      <section className="problem-statement">
-        <h2>How might we...</h2>
-        <p>facilitate a research study on how people interpret art while simultaneously improving their museum experience?</p>
       </section>
 
       <section className="project-purpose">
@@ -77,22 +79,27 @@ function AmbiguityInArt() {
         <p>As such, we made sure to adhere to our partner's research goals and preferred flow during our ideation and design process.</p>
       </section>
 
+      <section className="problem-statement">
+        <h2>How might we...</h2>
+        <p>facilitate a research study on how people interpret art while simultaneously improving their museum experience?</p>
+      </section>
+
+
       <section className="user-research">
         <h3>User interviews</h3>
-        <p>We brainstormed interview questions and conducted interviews for students and faculty around campus that had varying degrees of interest in museum going and/or relevant backgrounds in art. The goal of our user interviews was to gauge the following:</p>
+        <p>We brainstormed interview questions and conducted interviews of students and faculty across Dartmouth's campus. The interviewees had varying degrees of interest in museum going and/or relevant backgrounds in art. The aim of our user interviews was to gauge the following:</p>
         <ul>
-          <li>What is the typical user's experience at a museum?</li>
-          <li>What keeps users engaged in a museum, which will help tailor the features of the app to best reflect this</li>
-          <li>Understanding what the best ways to display other people’s opinions are</li>
-          <li>Understanding best ways to summarize personal data from each visit</li>
+          <li>What is a typical visitor's experience at a museum, and what keeps them engaged?</li>
+          <li>What is the most user-friendly way to display other people’s opinions?</li>
+          <li>How do we best summarize personal data from each museum visit?</li>
         </ul>
         <p>Thus, we generated 5 main categories of questions to ask our users, each with various subquestions:</p>
         <ul>
-          <li>How do you currently interact with museums?</li>
-          <li>What attracts you to specific artworks/exhibits?</li>
-          <li>Do you seek out outside opinions of the things that you experience (art, movies, books, plays, TV shows, etc)?</li>
-          <li>Is there anything you find challenging or annoying about finding other opinions on art?</li>
-          <li>Do you have any apps that summarize your activity?</li>
+          <li>1. How do you currently interact with museums?</li>
+          <li>2. What attracts you to specific artworks/exhibits?</li>
+          <li>3. Do you seek out outside opinions of the things that you experience (art, movies, books, plays, TV shows, etc)?</li>
+          <li>4. Is there anything you find challenging or annoying about finding other opinions on art?</li>
+          <li>5. Do you have any apps that summarize your activity?</li>
         </ul>
       </section>
 

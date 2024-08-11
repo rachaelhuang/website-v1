@@ -1,41 +1,44 @@
-/* Navbar.css */
-
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    /* background-color: #fff; */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px; /* Adjust padding as needed */
-  }
-  
-  .logo {
-    height: 40px; /* Adjust size as needed */
-  }
-  
-  .navbar-menu {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-menu li a {
-    text-decoration: none;
-    color: #333; /* Change this to match your design */
-    font-weight: bold;
-  }
-  
-  .navbar-menu a:hover {
-    color: #ffcc00; /* Change text color on hover */
-    border: 2px solid #ffcc00; /* Border color and width */
-    border-radius: 4px; /* Rounded corners (optional) */
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background-color: #fff; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.navbar-hidden {
+  top: -100px; 
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; 
+}
+
+.logo {
+  height: 40px; 
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #333; 
+  font-weight: bold;
+}
+
+.navbar-menu a:hover {
+  color: #06737c; /* Change text color on hover */
+  border: 2px solid #276b65; /* Border color and width */
+  border-radius: 4px; /* Rounded corners (optional) */
+}

@@ -4,7 +4,7 @@ function Dineable() {
   return (
     <div>
       <h1>Dineable</h1>
-      <p>Details</p>
+      <p>Case study coming soon...</p>
     </div>
   );
 }

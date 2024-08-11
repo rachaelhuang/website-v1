@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./App.css";
 import Navbar from './components/Navbar.js';
+import Footer from './components/Footer.js';
 import Home from './pages/home.js';
 import Work from './pages/work.js';
 import Play from './pages/play.js';
@@ -21,9 +22,9 @@ function App() {
           <Route path="/about" element={<About />} />
 
           <Route path="/ambiguityinart" element={<AmbiguityInArt />} />
-          <Route path="/ambiguityinart" element={<Dineable />} />
-
+          <Route path="/dineable" element={<Dineable />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

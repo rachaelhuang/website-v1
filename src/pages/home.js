@@ -8,9 +8,10 @@ function Home() {
       <div className="splash-screen">
         <h1>Hi, I'm Rachael</h1>
         <p>A product designer who loves to create unique digital experiences.</p>
+        <a href="#my-projects" className="see-my-work-button">See my work</a>
       </div>
 
-      <div className="projects-section">
+      <div id="my-projects" className="projects-section">
         <h2>My Projects</h2>
         <div className="project-list">
 
@@ -18,10 +19,12 @@ function Home() {
             <div className="description">
               <h3>Ambiguity in Art</h3>
               <p>Facilitating a neuroscience research study through artwork interpretations by museum visitors.</p>
+              <Link to="/ambiguityinart">
+                  <p>Click to see the story</p>
+              </Link>
             </div>
-                <img src="/assets/ambiguityinart/projthumbnail.png" alt="Ambiguity in Art Project" />
             <Link to="/ambiguityinart">
-                <p>See the story</p>
+              <img src="/assets/ambiguityinart/projthumbnail.png" alt="Ambiguity in Art Project" />
             </Link>
           </div>
 
@@ -29,10 +32,12 @@ function Home() {
             <div className="description">
               <h3>Dineable</h3>
               <p>Allowing college students to share reviews about dining hall meals and get personalized recommendations.</p>
+              <Link to="/dineable">
+                  <p>Click to see the story</p>
+              </Link>
             </div>
-            <img src="/assets/dineable/projthumbnail.png" alt="Dineable Project" />
             <Link to="/dineable">
-                <p>See the story</p>
+              <img src="/assets/dineable/projthumbnail.png" alt="Dineable Project" />
             </Link>
           </div>
 

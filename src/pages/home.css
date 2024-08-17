@@ -1,101 +1,110 @@
+html {
+  scroll-behavior: smooth; 
+}
+
 .splash-screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    background-color: #f4f4f4; /* Change this to your desired background color */
-    color: #333;
-    animation: fadeIn 1.5s ease-in-out;
-  }
-  
-  .splash-screen h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-family: 'DM Sans', sans-serif;
-  }
-  
-  .splash-screen p {
-    font-size: 1.5rem;
-    font-family: 'DM Sans', sans-serif;
-  }
-  
-  .see-my-work-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #174aa3; 
-    color: #f0f0f0; 
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .see-my-work-button:hover {
-    background-color: #4564c1; /* Button background color on hover */
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  .projects-section {
-    padding: 50px;
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .project-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px; /* Gap between projects */
-    width: 100%; /* Make sure the project list takes full width */
-    margin: 0 auto; /* Center the project list */
-  }
-  
-  .project-item {
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    justify-content: space-between;
-    /* gap: 20px; Space between description and image */
-    width: 100%; 
-  }
-  
-  .project-item .description {
-    align-items: flex-start;
-    /* flex: 1; */
-    max-width: 50%; /* Limit the width of the description */
-    text-align: left; /* Align text to the left */
-    margin-left: 100px;
-  }
-  
-  .project-item .description h3 {
-    font-size: 1.5em;
-  }
-  
-  .project-item .description p {
-    margin: 5px 0 0;
-  }
-  
-  .project-item img {
-    max-width: 80%; /* Adjust width of the image */
-    height: 80%; /* Maintain aspect ratio */
-    border: 1px solid #ddd; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .project-item a {
-    color: #007bff; /* Link color */
-    text-decoration: none; /* Remove underline */
-    margin-top: 10px; /* Space above the link */
-  }
-  
-  .project-item a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #333;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.splash-screen h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.splash-screen p {
+  font-size: 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.see-my-work-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #174aa3; 
+  color: #f0f0f0; 
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.see-my-work-button:hover {
+  background-color: #4564c1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.projects-section {
+  padding: 50px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+  width: 100%;
+}
+
+.project-item .description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.project-item h3 {
+  font-size: 1.5em;
+}
+
+.project-item p {
+  margin: 5px 0;
+}
+
+.project-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+.project-item img {
+  width: 100%; 
+  height: auto;
+  max-width: 1000px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-self: end; 
+  transition: transform 0.3s ease;
+
+}
+
+.project-item img:hover {
+  transform: scale(1.1); 
+}

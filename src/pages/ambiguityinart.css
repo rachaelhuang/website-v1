@@ -83,6 +83,21 @@
   .final-product-teaser {
     margin: 2rem;
   }
+
+  .demo-section {
+    display: grid;
+    grid-template-columns: 70% 30%;;
+    gap: 20px;
+    align-items: start;
+    width: 100%;  
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%; /* Adjust this value as needed */
+    margin: 0 auto;
+  
+  }
   
   .problem-statement {
     background-color: #f4f4f4;

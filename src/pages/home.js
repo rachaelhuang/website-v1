@@ -7,8 +7,8 @@ function Home() {
     <div> 
       <div className="splash-screen">
         <h1>Hi, I'm Rachael</h1>
-        <p>A product designer who loves to create unique digital experiences.</p>
-        <a href="my-projects" className="see-my-work-button">See my work</a>
+        <p>A full-stack product designer who loves to create unique digital experiences.</p>
+        <a href="#my-projects" className="see-my-work-button">See my work</a>
       </div>
 
       <div id="my-projects" className="projects-section">
@@ -22,6 +22,12 @@ function Home() {
               <Link to="/ambiguityinart">
                   <p>Click to see the story</p>
               </Link>
+              <div className="tags">
+                <span className="tag">Product Design</span>
+                <span className="tag">Client work</span>
+                <span className="tag">Prototyping</span>
+              </div>
+
             </div>
             <Link to="/ambiguityinart">
               <img src="/assets/ambiguityinart/projthumbnail.png" alt="Ambiguity in Art Project" />
@@ -35,7 +41,13 @@ function Home() {
               <Link to="/dineable">
                   <p>Click to see the story</p>
               </Link>
+              <div className="tags">
+                <span className="tag">End-to-end</span>
+                <span className="tag">Product Design</span>
+                <span className="tag">Mobile App Development</span>
+              </div>
             </div>
+            
             <Link to="/dineable">
               <img src="/assets/dineable/projthumbnail.png" alt="Dineable Project" />
             </Link>

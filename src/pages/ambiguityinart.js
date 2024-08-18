@@ -53,23 +53,29 @@ function AmbiguityInArt() {
 
       <section className="final-product-teaser">
         <h2>Product Demo</h2>
-        <p>A sneak peek of the final prototype and some of its functionalities. Scroll to see the full story below! </p>
+        <p>A sneak peek of the prototype and some of its functionalities. Scroll to see the full story below! </p>
         
-        <div className="demo-section-1"> 
-         <div className="video-container">
-          <video autoPlay loop muted className="case-study-video">
-            <source src="/assets/ambiguityinart/ambiguityinart_demovid1.mov" type="video/mp4" />
-          </video>
-          <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+        <div className="demo-section"> 
+          <div className="video-container">
+            <video autoPlay loop muted className="case-study-video">
+              <source src="/assets/ambiguityinart/ambiguityinart_demovid1.mov" type="video/mp4" />
+            </video>
+            <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+          </div>
+          <div className="video-description">
+            <p>Navigate through the </p>
           </div>
         </div>
 
-        <div className="video-container">
-          <video autoPlay loop muted className="case-study-video">
-            <source src="/assets/ambiguityinart/ambiguityinart_demovid2.mov" type="video/mp4" />
-          </video>
-          <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+        <div className="demo-section"> 
+          <div className="video-container">
+            <video autoPlay loop muted className="case-study-video">
+              <source src="/assets/ambiguityinart/ambiguityinart_demovid2.mov" type="video/mp4" />
+            </video>
+            <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+          </div>
         </div>
+
       </section>
 
       <section className="project-purpose">

@@ -2,6 +2,7 @@ import React from 'react';
 import './ambiguityinart.css';
 
 function AmbiguityInArt() {
+
   return (
     <div className="case-study">
       <div className="banner">
@@ -55,27 +56,32 @@ function AmbiguityInArt() {
         <h2>Product Demo</h2>
         <p>A sneak peek of the prototype and some of its functionalities. Scroll to see the full story below! </p>
         
-        <div className="demo-section"> 
-          <div className="video-container">
-            <video autoPlay loop muted className="case-study-video">
-              <source src="/assets/ambiguityinart/ambiguityinart_demovid1.mov" type="video/mp4" />
-            </video>
-            <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+        <div className="demo-videos-list">
+          <div className="demo-section"> 
+            <div className="video-container">
+              <video autoPlay loop muted className="case-study-video">
+                <source src="/assets/ambiguityinart/ambiguityinart_demovid1.mov" type="video/mp4" />
+              </video>
+              <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+            </div>
+            <div className="video-description">
+              <p>Navigate through the Hood Museum map, and click on artworks that are part of the study. </p>
+            </div>
           </div>
-          <div className="video-description">
-            <p>Navigate through the </p>
-          </div>
-        </div>
 
-        <div className="demo-section"> 
-          <div className="video-container">
-            <video autoPlay loop muted className="case-study-video">
-              <source src="/assets/ambiguityinart/ambiguityinart_demovid2.mov" type="video/mp4" />
-            </video>
-            <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+          <div className="demo-section"> 
+            <div className="video-container">
+              <video autoPlay loop muted className="case-study-video">
+                <source src="/assets/ambiguityinart/ambiguityinart_demovid2.mov" type="video/mp4" />
+              </video>
+              <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+            </div>
+            <div className="video-description">
+              <p>Get personalized summary stats at the end of your museum session, including your artwork personality -- all determined by your interpretations. </p>
+            </div>
           </div>
-        </div>
 
+        </div>
       </section>
 
       <section className="project-purpose">
@@ -93,7 +99,7 @@ function AmbiguityInArt() {
 
       <section className="user-research">
         <h3>User interviews</h3>
-        <p>We brainstormed interview questions and conducted interviews of students and faculty across Dartmouth's campus. The interviewees had varying degrees of interest in museum going and/or relevant backgrounds in art. The aim of our user interviews was to gauge the following:</p>
+        <p>We brainstormed interview questions and conducted interviews of students and faculty across Dartmouth's campus. Each interviewee had a varying degree of interest in museum going or a relevant background in museum art. The aim of our user interviews was to gauge the following:</p>
         <ul>
           <li>What is a typical visitor's experience at a museum, and what keeps them engaged?</li>
           <li>What is the most user-friendly way to display other people’s opinions?</li>
@@ -122,7 +128,41 @@ function AmbiguityInArt() {
         </ul>
         <img src="assets/images/project1-research.jpg" alt="Research Image" className="case-study-image"/>
       </section>
+
+      <section class="ideation">
+        <h2>Ideation</h2>
+        <p>Once we wrapped up with interview findings and our feature spec, each of us created Crazy 8 sketches (link) as the initial ideation of screen designs.
+          I couldn't quite get to 8 on time, but I drew 6 screens, imagining the flow from the museum map to an individual artwork, then to interpretation of the artwork,
+          and lastly the summary of the user's total session, reminiscent of a Spotify-Wrapped like summary. </p>
+        <img src="../assets/ambiguityinart/crazy8s.png"/>
+
+        <p>After Crazy 8s, we created solution sketches to further define our screens. Because the research study requires the consent of the users, we needed a clear presentation of the study's consent form before allowing the user to engage in the study itself. </p>
+        <img src="../assets/ambiguityinart/sketch.png"/>
+      </section>
+
+      
+
+      <section class="design-process">
+        <h2>Design Process</h2>
+        <p>We defined a wireflow to ensure that the layout of the screens were clear and easy to understand.</p>
+        <img src="../assets/ambiguityinart/wireflow.png"/>
+  
+        <h3>Grayscales</h3>
+        <p>After the wireflow, each designer created our own grayscale screens. After initial iterations, we came together to discuss which designs had the best usability.</p>
+        <p>After receiving user feedback from two rounds of iterations, we  </p>
+
+        <h3>Prototypes</h3>
+        <p></p>
+
+        <img src="assets/images/project1-design-process.jpg" alt="Design Process Image" class="case-study-image"/>
+      </section>
+
+
+
+
     </div>
+
+
   );
 }
 

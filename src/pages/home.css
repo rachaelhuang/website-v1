@@ -52,6 +52,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .project-list {
@@ -59,6 +60,8 @@ html {
   flex-direction: column;
   gap: 40px;
   width: 100%;
+  align-items: center;
+
 }
 
 .project-item {
@@ -67,6 +70,7 @@ html {
   gap: 20px;
   align-items: start;
   width: 100%;
+  max-width: 80%;
 }
 
 .project-item .description {
@@ -94,7 +98,7 @@ html {
   text-decoration: underline;
 }
 
-.project-item img {
+.project-thumbnail {
   width: 100%; 
   height: auto;
   max-width: 1000px;
@@ -109,6 +113,21 @@ html {
   transform: scale(1.05); 
 }
 
+.story-link {
+  display: flex;
+  align-items: center;
+}
+
+.story-link p {
+  margin-right: 5px;
+}
+
+.arrow-icon {
+  width: 50px; 
+  height: auto;
+  margin-left: 5px;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -117,10 +136,14 @@ html {
 }
 
 .tag {
-  background-color: #e0e0e0;
+  /* background-color: #e0e0e0; */
+  font-size: 12px;
   color: #333;
   padding: 5px 10px;
   border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color:#353535;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }

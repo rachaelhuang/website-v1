@@ -1,147 +1,170 @@
 .case-study {
-    font-family: 'DM Sans';
-    text-align: left;
-  }
-  
-  .banner {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60vh;
-    color: white;
-  }
+  font-family: 'DM Sans';
+  text-align: left;
+}
 
-  .banner::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-    z-index: 1; /* Ensure the shadow is above the image but below the content */
-  }
-  
-  .banner-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  .banner-content {
-    text-align: center;
-    z-index: 2; /* Ensure the content is above the shadow */
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  color: white;
+}
 
-  }
-  
-  .banner-content h1 {
-    margin-top: 100px;
-    color:#f4f4f4;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .banner-content p {
-    font-size: 1.25rem;
-  }
-  
-  .information {
-    display: flex;
-    flex-direction: row;
-    padding: 2rem;
-    background-color: #f4f4f4;
-    color: #333;
-    justify-content: space-around;
-  }
-  
-  .info-section {
-    margin-bottom: 0;
-    flex: 1;
-    text-align: center;
-  }
-  
-  .info-section p {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .info-section h5 {
-    font-size: 1rem;
-    margin: 0;
-  }
-  
-  .overview {
-    margin: 2rem;
-  }
-  
-  .final-product-teaser {
-    margin: 2rem;
-  }
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  z-index: 1; /* Ensure the shadow is above the image but below the content */
+}
 
-  .demo-section {
-    display: grid;
-    grid-template-columns: 70% 30%;;
-    gap: 20px;
-    align-items: start;
-    width: 100%;  
-  }
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 
-  .video-container {
-    position: relative;
-    width: 100%; /* Adjust this value as needed */
-    margin: 0 auto;
-  
-  }
-  
-  .problem-statement {
-    background-color: #f4f4f4;
-    padding: 1rem;
-  }
-  
-  .problem-statement p {
-    margin: 2rem;
-  }
+.banner-content {
+  text-align: center;
+  z-index: 2; /* Ensure the content is above the shadow */
+}
 
-  .project-purpose {
-    margin: 2rem;
-  }
-  
-  .user-research {
-    margin: 2rem;
-  }
-  
-  .video-container {
-    position: relative;
-    width: 30%; /* container width relative to parent */
-    margin: 0 auto;
-  }
-  
-  .case-study-video {
-    width: 100%; 
-    height: auto;
-    border-radius: 20px 20px 25px 25px; /* Adjust radius values as needed */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.91); /* adjust to scale vid */
-  }
-  
-  .case-study-video-frame {
-    position: relative;
-    width: 100%; 
-    height: auto;
-  }
+.banner-content h1 {
+  margin-top: 100px;
+  color: #f4f4f4;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
 
-  .data-analysis {
-    margin: 2rem;
-  }
-  .empathy-maps {
-    max-height: 600px;
-  }
-  
+.banner-content p {
+  font-size: 1.25rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  color: #333;
+  justify-content: space-around;
+}
+
+.info-section {
+  margin-bottom: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.info-section p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.info-section h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.overview {
+  margin: 6rem;
+}
+
+.final-product-teaser {
+  margin: 6rem;
+}
+
+.demo-videos-list {
+  align-items: center;
+  width: 80%;
+}
+
+.demo-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.video-container {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+.case-study-video {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 25px 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.91); /* adjust to scale vid size */
+}
+
+.case-study-video-frame {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.video-description {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  /* flex: 1; */
+}
+
+.project-purpose {
+  margin: 6rem;
+}
+
+.problem-statement {
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+.problem-statement p {
+  margin: 6rem;
+}
+
+.user-research {
+  margin: 6rem;
+
+}
+
+.data-analysis {
+  margin: 6rem;
+}
+
+.empathy-maps {
+  max-height: 600px;
+}
+
+.ideation {
+  margin: 6rem;
+}
+
+.ideation img {
+  max-width: 80%;
+}
+
+.design-process {
+  margin: 6rem;
+}
+
+.design-process img {
+  max-width: 80%;
+}

@@ -6,7 +6,7 @@ function Home() {
   return (
     <div> 
       <div className="splash-screen">
-        <h1>Hi, I'm Rachael</h1>
+        <h1>Hi! I'm Rachael</h1>
         <p>A full-stack product designer who loves to create unique digital experiences.</p>
         <a href="#my-projects" className="see-my-work-button">See my work</a>
       </div>
@@ -17,11 +17,11 @@ function Home() {
 
           <div className="project-item">
             <div className="description">
-              <h3>Ambiguity in Art</h3>
+              <h3>ArtLibs</h3>
               <p>Facilitating a neuroscience research study through artwork interpretations by museum visitors.</p>
               
               <div className="story-link">
-                <p>Click to see the story</p>
+                <p className="click-text">Click to see the story</p>
                 <img className="arrow-icon" src="/assets/loopyarrow.svg"/>
               </div>
 
@@ -43,7 +43,7 @@ function Home() {
               <p>Allowing college students to share reviews about dining hall meals and get personalized recommendations.</p>
               
               <div className="story-link">
-                <p>Click to see the story</p>
+                <p className="click-text">Click to see the story</p>
                 <img className="arrow-icon" src="/assets/loopyarrow.svg"/>
               </div>
 

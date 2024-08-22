@@ -1,14 +1,28 @@
 import React from 'react';
 import './ambiguityinart.css';
+import ProgressBar from '../components/ProgressBar';
+
 
 function AmbiguityInArt() {
+  const sections = [
+    { id: 'overview', label: 'Overview'},
+    { id: 'product-demo', label: 'Product Demo'},
+    { id: 'partner-requests', label: 'Partner Requests'},
+    { id: 'problem-statement', label: 'Problem Statement' },
+    { id: 'user-research', label: 'User Research' },
+    { id: 'data-analysis', label: 'Data Analysis'},
+    { id: 'ideation', label: 'Ideation' },
+    { id: 'design-process', label: 'Design Process'},
+  ];
 
   return (
     <div className="case-study">
+      <ProgressBar sections={sections} />
+
       <div className="banner">
         <img src="/assets/ambiguityinart/projthumbnail.png" alt="Ambiguity in Art" className="banner-image" />
         <div className="banner-content">
-          <h1>Ambiguity in Art: An Interactive Museum Experience</h1>
+          <h1>ArtLibs: An Interactive Museum Experience</h1>
           <p>Facilitating a neuroscience research study through visitors at the Hood Museum of Art.</p>
         </div>
       </div>
@@ -32,27 +46,30 @@ function AmbiguityInArt() {
           <p>Tools</p>
           <p>Figma</p>
           <p>Adobe Photoshop</p>
+          <p>Adobe After Effects</p>
         </div>
         <div className="info-section">
           <p>Skills</p>
-          <p>Interaction Design</p>
           <p>Prototyping</p>
           <p>Visual Design</p>
+          <p>Interaction Design</p>
           <p>User Research</p>
         </div>
       </section>
 
-      <section className="overview">
+      <section id="overview" className="overview">
         <h2>Project Overview</h2>
         <p>Different people can see the same image, but reach vastly different conclusions. The <a href="https://thefinnlab.github.io" target="_blank" rel="noopener noreferrer">FINN Lab</a>, a neuroscience lab at Dartmouth, is studying the implications of those differences in perception, and how they may inform phenomena such as mental health and politics.</p>
-        <p>Previously, the FINN Lab team handed out pen-and-paper surveys to subjects in a controlled lab setting to gather data.
-            However, they sought to expand their data collection via visitors of Dartmouth's art museum, the Hood Museum of Art.
-            They envisioned a digital 'edutainment' experience where museum-goers could have a fun, interactive experience while simultaneously learning about artwork.
-            Thus, our team was tasked with designing and creating a mobile app that allows museum visitors to interpret artworks in the Hood Museum through Mad-Libs style inputs.</p>
-       
+        <p>In previous studies, the FINN Lab team utilized a controlled lab setting where they gathered data through pen-and-paper surveys.
+            However, they sought to expand their form of data collection through visitors of Dartmouth's art museum, the Hood Museum of Art.
+            They envisioned a mobile 'edutainment' experience where museum-goers could enjoy an <strong>interactive digital experience</strong> while simultaneously <strong>learning about artwork</strong>.
+            Our team was tasked with designing and developing a mobile app that allows museum visitors to interpret Hood Museum artworks through Mad-Libs style inputs.</p>
+
+        <h3>Key Partners</h3>
+        <p>Throughout the 10 week sprint, we met weekly with FINN Lab reps Professor Emily Finn and graduate student Clara Sava-Segal for reviews, standups, and feedback.</p>
       </section>
 
-      <section className="final-product-teaser">
+      <section id="product-demo" className="final-product-teaser">
         <h2>Product Demo</h2>
         <p>A sneak peek of the prototype and some of its functionalities. Scroll to see the full story below! </p>
         
@@ -84,35 +101,35 @@ function AmbiguityInArt() {
         </div>
       </section>
 
-      <section className="project-purpose">
+      <section className="partner-requests">
         <h3>Partner Requests</h3>
-        <p>Because this app's primary purpose is to collect research data from Hood Museum-goers, the FINN Lab partners presented to us their idea of the app's general flow that would best inform their research goals.</p>
+        <p>With the goal of best gathering their research data, the FINN Lab partners presented to us their idea of the app's general flow that would best inform their research goals.</p>
         <p>Add visual of this flow?</p>
+        <p>We were working within a unique constraint; we needed to <strong> balance an enjoyable user experience alongside the requirements of a scientific study. </strong> 
+          For example, the partners required specific quantiative data that we needed our designs to reflect. As such, some screens needed to be separated and extra instructions included to ensure that participants used the app correctly.
+          Different age groups as well.
+        </p>
+
         <p>As such, we made sure to adhere to our partner's research goals and preferred flow during our ideation and design process.</p>
       </section>
 
-      <section className="problem-statement">
-        <h2>How might we...</h2>
+      <section id="problem-statement" className="problem-statement">
+        <h2 style={{ fontStyle: 'italic', fontSize: '30px'}}>How might we...</h2>
         <p>facilitate a research study on how people interpret art while simultaneously improving their museum experience?</p>
+
+       
       </section>
 
 
-      <section className="user-research">
-        <h3>User interviews</h3>
-        <p>We brainstormed interview questions and conducted interviews of students and faculty across Dartmouth's campus. Each interviewee had a varying degree of interest in museum going or a relevant background in museum art. The aim of our user interviews was to gauge the following:</p>
-        <ul>
+      <section id='user-research' className="user-research">
+        <h3>User Research</h3>
+        <h2>User interviews</h2>
+        <p>In order to understand a typical visitor's experience in the Hood Museum, we conducted interviews of students and faculty across Dartmouth's campus. Each interviewee had a varying degree of interest in museums or a relevant background in museum art. The goal of our user interviews was to gauge the following:</p>
+        <div>
           <li>What is a typical visitor's experience at a museum, and what keeps them engaged?</li>
           <li>What is the most user-friendly way to display other people’s opinions?</li>
           <li>How do we best summarize personal data from each museum visit?</li>
-        </ul>
-        <p>Thus, we generated 5 main categories of questions to ask our users, each with various subquestions:</p>
-        <ul>
-          <li>1. How do you currently interact with museums?</li>
-          <li>2. What attracts you to specific artworks/exhibits?</li>
-          <li>3. Do you seek out outside opinions of the things that you experience (art, movies, books, plays, TV shows, etc)?</li>
-          <li>4. Is there anything you find challenging or annoying about finding other opinions on art?</li>
-          <li>5. Do you have any apps that summarize your activity?</li>
-        </ul>
+        </div>
       </section>
 
       <section className="data-analysis">
@@ -142,7 +159,7 @@ function AmbiguityInArt() {
 
       
 
-      <section class="design-process">
+      <section id='design-process' class="design-process">
         <h2>Design Process</h2>
         <p>We defined a wireflow to ensure that the layout of the screens were clear and easy to understand.</p>
         <img src="../assets/ambiguityinart/wireflow.png"/>

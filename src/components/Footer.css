@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #f4f4f4;
     color: #333;
-    text-align: center;
+    text-align: left;
     padding: 10px 0;
     border-top: 1px solid #ddd;
   }
@@ -22,3 +22,7 @@
     text-decoration: underline;
   }
   
+  .updated {
+    margin-top: 50px;
+
+  }

@@ -1,6 +1,11 @@
 .case-study {
-  font-family: 'DM Sans';
+  font-family: 'Outfit';
+  font-weight: 100;
   text-align: left;
+}
+
+.case-study p {
+  font-size: 17px;
 }
 
 .banner {
@@ -76,11 +81,15 @@
 }
 
 .overview {
-  margin: 6rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem; /* Added margin-bottom */
 }
 
 .final-product-teaser {
-  margin: 6rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem; /* Added margin-bottom */
 }
 
 .demo-videos-list {
@@ -124,29 +133,33 @@
   align-items: center;
   justify-content: flex-start;
   padding: 1rem;
-  /* flex: 1; */
 }
 
-.project-purpose {
-  margin: 6rem;
+.partner-requests {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem; /* Added margin-bottom */
 }
 
 .problem-statement {
-  background-color: #f4f4f4;
+  background-color: #d0eae5;
+  border-radius: 15px;
   padding: 1rem;
-}
-
-.problem-statement p {
-  margin: 6rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem; /* Added margin-bottom */
 }
 
 .user-research {
-  margin: 6rem;
-
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem; /* Added margin-bottom */
 }
 
 .data-analysis {
-  margin: 6rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem; /* Added margin-bottom */
 }
 
 .empathy-maps {
@@ -154,7 +167,9 @@
 }
 
 .ideation {
-  margin: 6rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem; /* Added margin-bottom */
 }
 
 .ideation img {
@@ -162,7 +177,9 @@
 }
 
 .design-process {
-  margin: 6rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem; /* Added margin-bottom */
 }
 
 .design-process img {

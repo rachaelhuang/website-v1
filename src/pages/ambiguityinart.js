@@ -62,8 +62,8 @@ function AmbiguityInArt() {
         <p>Different people can see the same image, but reach vastly different conclusions. The <a href="https://thefinnlab.github.io" target="_blank" rel="noopener noreferrer">FINN Lab</a>, a neuroscience lab at Dartmouth, is studying the implications of those differences in perception, and how they may inform phenomena such as mental health and politics.</p>
         <p>In previous studies, the FINN Lab team utilized a controlled lab setting where they gathered data through pen-and-paper surveys.
             However, they sought to expand their form of data collection through visitors of Dartmouth's art museum, the Hood Museum of Art.
-            They envisioned a mobile 'edutainment' experience where museum-goers could enjoy an <strong>interactive digital experience</strong> while simultaneously <strong>learning about artwork</strong>.
-            Our team was tasked with designing and developing a mobile app that allows museum visitors to interpret Hood Museum artworks through Mad-Libs style inputs.</p>
+            They envisioned a mobile 'edutainment' experience that allows museum-goers to enjoy an <b>interactive digital journey</b>, enabling them to <b>engage directly with the artwork before them</b>.
+            Our team was tasked with designing and developing a mobile app that allows Hood Museum visitors to interpret artworks through a Mad-Libs style activity.</p>
 
         <h4>Key Partners</h4>
         <p>Throughout the 10 week sprint, we met weekly with FINN Lab reps Professor Emily Finn and graduate student Clara Sava-Segal for reviews, standups, and feedback.</p>
@@ -103,17 +103,29 @@ function AmbiguityInArt() {
 
       <section className="partner-requests">
         <h2>Partner Requests</h2>
-        <p>In order to properly gather their research data, the FINN Lab partners presented to us their idea of the flow that would best achieve their research goals.</p>
-        <p>Museum map selection -> Intial interpretation -> Alternative interpretation -> Re-evaulate interpretation -> Repeat -> Activity Summary</p>
-        <p>We were working within a unique constraint; we needed to <strong> balance an enjoyable user experience alongside the requirements and goals of a scientific study. </strong> 
-          For example, the partners needed to record specific quantitative data, but not make it obvious to the users, which we needed our designs to reflect. As such, some screens would need to be separated and extra instructions included to ensure that participants used the app correctly.
+        <p>A number of artworks were preselected from the Hood Museum galleries to be part of the study.
+          At our initial meeting, the FINN Lab partners presented to us a general user flow that would best achieve their research goals.
+        </p>
+        
+        <div className="user-flow">
+          <div className="flow-step">Museum map showing artwork selections</div>
+          <div className="flow-step">Fill out your interpretation (MadLibs style)</div>
+          <div className="flow-step">Read an alternative interpretation</div>
+          <div className="flow-step">Rate other interpretation & rate your own</div>
+          <div className="flow-step">Repeat steps with other artworks</div>
+          <div className="flow-step">Activity summary at the end of session</div>
+        </div>
+        
+        <p>From the get-go, we were working within a unique constraint; we needed to <strong> balance an enjoyable user experience alongside the requirements and goals of a scientific study</strong>. 
+          For example, the partners needed to record quantitative data from the ratings, but not make it obvious to the users, which we needed our designs to reflect.
+          Down the line, we would need to separate some screens and include extra instructions to ensure that participants used the app correctly.
         </p>
       </section>
 
       <section id="problem-statement" className="problem-statement">
-        <p>We asked ourselves:</p>
+        <p>We thus asked ourselves:</p>
         <h2 style={{ fontStyle: 'italic', fontSize: '30px'}}>How might we...</h2>
-        <p>facilitate a research study on how people interpret art while simultaneously improving their museum experience?</p>
+        <p>facilitate a research study on how people interpret art while making their museum experience enjoyable?</p>
       </section>
 
       <section className="industry-research">
@@ -131,13 +143,22 @@ function AmbiguityInArt() {
           />
         </div>
         
-        <p> We noted the pros and cons for each app.</p>
+        <p>We noted the pros and cons for each app.</p>
         <div style={{ backgroundColor: '#f0f0f0', padding: '1rem', display: 'inline-block', borderRadius: '15px' }}>
           <img
             src="../assets/ambiguityinart/industryresearch_visual2.png"
             className="case-study-image"
           />
         </div>
+
+        <p>After personally using some of the apps and examining their user experience, we identified 3 main feature buckets: the museum map & navigation, rating interpretations & comparisons, and the activity summary.
+          We then spent time brainstorming specific requirements and components needed for each of the three.</p>
+          <img
+            src="../assets/ambiguityinart/featureidentification.png"
+            className="case-study-image"
+          />
+
+
 
       </section>
 

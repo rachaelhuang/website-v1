@@ -70,7 +70,7 @@ h3 {
   padding-top: 1rem;
   padding-left: 6rem;
   padding-bottom: 1rem;
-  background-color: #262626;
+  background-color: #0C5753;
   color: #dadada;
   justify-content: space-around;
 }
@@ -189,7 +189,7 @@ h3 {
 }
 
 .problem-statement {
-  background-color: #d0eae5;
+  background-color: #dcedea;
   border-radius: 15px;
   padding: 1rem;
   margin-left: 6rem;
@@ -206,13 +206,33 @@ h3 {
 .user-research {
   margin-left: 6rem;
   margin-right: 6rem;
-  margin-bottom: 6rem; /* Added margin-bottom */
+  margin-bottom: 6rem; 
 }
+
+.bubble-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 1rem; 
+  margin: 0 auto; 
+  max-width: 80%; 
+  font-style: italic;
+}
+
+.bubble {
+  background-color: #bfe2ea; 
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  font-size: 26px;
+}
+
 
 .data-analysis {
   margin-left: 6rem;
   margin-right: 6rem;
-  margin-bottom: 6rem; /* Added margin-bottom */
+  margin-bottom: 6rem; 
 }
 
 .empathy-maps {
@@ -232,9 +252,32 @@ h3 {
 .design-process {
   margin-left: 6rem;
   margin-right: 6rem;
-  margin-bottom: 6rem; /* Added margin-bottom */
+  margin-bottom: 6rem;
 }
 
 .design-process img {
-  max-width: 80%;
+  max-width: 80%; 
+}
+
+.image-text-container {
+  display: grid;
+  grid-template-columns: 25% 75%; /* Two equal columns */
+  align-items: start;  
+  margin-bottom: 2rem; 
+}
+
+.image-text-container img {
+  max-width: 100%; /* Ensures images fit within their grid cell */
+  border-radius: 15px;
+  background-color: #dcedea;
+  padding: 1rem;
+}
+
+.image-text-container p {
+  margin: 0 1rem 0 0; /* Adds space between text and image */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
 }

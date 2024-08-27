@@ -61,7 +61,7 @@ function AmbiguityInArt() {
         <h2>Project Overview</h2>
         <p>Different people can see the same image, but reach vastly different conclusions. The <a href="https://thefinnlab.github.io" target="_blank" rel="noopener noreferrer">FINN Lab</a>, a neuroscience lab at Dartmouth, is studying the implications of those differences in perception, and how they may inform phenomena such as mental health and politics.</p>
         <p>In previous studies, the FINN Lab team utilized a controlled lab setting where they gathered data through pen-and-paper surveys.
-            However, they sought to expand their form of data collection through visitors of Dartmouth's art museum, the Hood Museum of Art.
+            However, they wanted to expand their form of data collection through visitors of Dartmouth's art museum, the Hood Museum of Art.
             They envisioned a mobile 'edutainment' experience that allows museum-goers to enjoy an <b>interactive digital journey</b>, enabling them to <b>engage directly with the artwork before them</b>.
             Our team was tasked with designing and developing a mobile app that allows Hood Museum visitors to interpret artworks through a <u>Mad-Libs style activity</u>.</p>
 
@@ -71,7 +71,7 @@ function AmbiguityInArt() {
       </section>
 
       <section id="product-demo" className="final-product-teaser">
-        <h3>SOLUTION</h3>
+        <h3>FINAL PRODUCT</h3>
         <h2>Product Demo</h2>
         <p>A sneak peek of the prototype and some of its functionalities. Scroll to see the full story below! </p>
         
@@ -191,7 +191,9 @@ function AmbiguityInArt() {
           <p> 
             <b style={{ color: '#6bb0a3', fontSize: '22px' }}>1.</b>
             <span style={{ fontSize: '20px', fontWeight: '500' }}> Users want to know more about the art they are looking at</span>
-            <p>Many interviewees noted that they like to know the story behind the art, the artist, and the context in which the art was created. However, <u>this brought up an issue for us</u>: users would be prohibited from looking at the museum plaques during the study.</p>
+            <p>Many interviewees noted that they like to know the story behind the art, the artist, and the context in which the art was created.
+              However, <u>this brought up an issue for us</u>: users would be prohibited from looking at the museum plaques during the study.
+              We would need to remind them to avoid looking at those plaques while they used the app. </p>
           </p>
 
           <p>
@@ -211,7 +213,7 @@ function AmbiguityInArt() {
         <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
       </section>
 
-      <section class="ideation">
+      <section id='ideation' className="ideation">
         <h3>IDEATION</h3>
         <h2>Sketching the User Flow</h2>
 
@@ -222,8 +224,7 @@ function AmbiguityInArt() {
         />
 
         <p>Following this, each designer started off with a set of rapid fire sketches (Crazy 8s) as our initial screen ideations.
-        After our initial sketches, we refined them into solution sketches. Because the research study requires the consent of the users, we needed a clear presentation of the study's consent form before allowing the user to engage in the study itself. </p>
-        <p>Additionally, we needed to ensure that the user could easily navigate between the two floors of the museum, and that the user could easily toggle between the two floors.</p>
+        After our initial sketches, we refined them into solution sketches.</p>
         <img src="../assets/ambiguityinart/crazy8s.png"/>
 
         <img src="../assets/ambiguityinart/solutionsketches.png"/>
@@ -236,15 +237,15 @@ function AmbiguityInArt() {
       </section>
 
       
-      <section id='design-process' class="design-process">
+      <section id='design-process' className="design-process">
         <h3>DESIGN</h3>
         <h2>Grayscales</h2>
-        <p>After the wireflow, each designer created our own grayscale screens. After initial iterations, we came together to discuss which designs had the best usability, and also sought user feedback for our iterations.</p>
+        <p>After the wireflow, each designer created our own grayscale screens. After initial iterations, we came together to discuss and noticed what we differed in our designs.</p>
 
         <div class="image-text-container">
           <div class="text-container">
             <h4>Floor toggle</h4>
-            <p>There are two floors of the Hood Museum, so we needed a toggle feature between the two floor maps. Each of us came up with different toggle components. </p>
+            <p> There are two floors of the Hood Museum, and artworks in the study would be on both floors. We needed a feature to access each of the two floor maps. Each of us came up with different toggle components. </p>
           </div>
           <img src="../assets/ambiguityinart/grayscales1.png" />
        </div>
@@ -265,10 +266,103 @@ function AmbiguityInArt() {
           <img src="../assets/ambiguityinart/grayscales3.png" />
         </div>
 
-        <p>After receiving user feedback from multiple rounds of iterations, we...</p>
+        <p>From then, we sought user feedback and discussed which features had the best usability. </p>
 
-        <h3>Prototypes</h3>
-        <p>I made sure to include a progress bar so that the user would be aware of how much they had progressed through the interpretation activity.</p>
+        <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
+      </section>
+
+      <section id='prototyping' className="prototyping">
+        <h3>PROTOTYPING</h3>
+        <h2>High fidelity designs</h2>
+        <p>After many, many iterations, with user feedback and discussion with the partners, we landed on these final features: </p>
+        
+        <div className="hifi-grid-container">
+          <div className="hifi-item">
+            <img src="../assets/ambiguityinart/hifi1.png" />
+            <p> <b>Toggle switch for floor navigation</b> </p>
+            <p style={{textAlign: 'left'}}>I used Photoshop to produce <u>cleaner, higher quality maps</u> of the museum floors that fit the dimensions of a vertical screen.</p>
+          </div>
+
+          <div className="hifi-item">
+            <img src="../assets/ambiguityinart/hifi2.png" />
+            <p> <b>Simple artwork popup</b> </p>
+            <p style={{textAlign: 'left'}}>For the study's purposes, we decided to label each artwork as "Artwork [Number]" to avoid biasing user's interpretations.</p>
+          </div> 
+
+          <div className="hifi-item">
+            <img src="../assets/ambiguityinart/hifi3.png" />
+            <p> <b>MadLibs fill-in page</b> </p>
+            <p style={{textAlign: 'left'}}> We added simple directions to clarify the process for the user. I also included a progress bar on the bottom and throughout the rest of the interpretation pages.</p>
+          </div>
+        </div>
+
+          <div className="hifi-container">
+            <div className="hifi-item">
+              <img src="../assets/ambiguityinart/hifi3-5.png" />
+              <p> <b>Interpretation pages</b> </p>
+              <p style={{textAlign: 'left'}}>We eventually split up the interpretation ratings into three pages. 
+              We also intentionally colored the user's interpretation in blue and the anonymous interpretation in purple to differentiate them. Subconsciously, this association with color 
+              For the third interpretation screen, the order of the user's interpretations and the alternative interpretation would be randomized in development to make the ratings as realistic as possible. </p>
+            </div>
+          </div>        
+
+      <p>Because the research study requires the consent of the users, we needed a clear presentation of the study's consent form before allowing the user to engage in the study itself</p>
+
+      <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
+    </section>
+
+
+      <section id='graphics' class="graphics">
+        <h3>GRAPHICS</h3>
+        <h2>Creating artwork personality animations</h2>
+
+        <p>As part of the activity summary, we came up with the idea of presenting an "<u>artwork personality</u>" based on the concept of "listening personalities" from Spotify Wrapped 2022.
+         A user's artwork personality would be based on how they rated each artwork and interpretation throughout the session. The partners wanted a total of four different artwork personalities.
+        </p>
+        
+        <h5 style={{margin: '0'}}>Spotify Wrapped 2022</h5>
+        <div className="inspiration-images">
+          <img src="../assets/ambiguityinart/spotifywrapped_personalities.avif"/>
+          <img src="../assets/ambiguityinart/spotifywrapped_personalitycards.jpg"/>
+        </div>
+
+        <p>Initially, we had envisioned the artwork personalities as static shape images, but I wanted to take it a step further and <u>animate them</u> to make them fun and memorable for the user. I first designed the personality shapes in Adobe Illustrator, according to their names. </p>
+        <img src="../assets/ambiguityinart/personalitygraphics.png" />
+
+        <p>I then used Adobe After Effects to create the animations and generate animation frames, and Photoshop to render the final GIFs. Thus became our four artwork personalities:</p>
+        <div className="video-row">
+          <div className="video-item">
+            <video autoPlay loop muted className="case-study-video-2">
+              <source src="/assets/ambiguityinart/personality_vid1.mov" type="video/mp4" />
+            </video>
+            <div className="video-description-2">Personality 1</div>
+          </div>
+          <div className="video-item">
+            <video autoPlay loop muted className="case-study-video-2">
+              <source src="/assets/ambiguityinart/personality_vid2.mov" type="video/mp4" />
+            </video>
+            <div className="video-description-2">Personality 2</div>
+          </div>
+          <div className="video-item">
+            <video autoPlay loop muted className="case-study-video-2">
+              <source src="/assets/ambiguityinart/personality_vid3.mov" type="video/mp4" />
+            </video>
+            <div className="video-description-2">Personality 3</div>
+          </div>
+          <div className="video-item">
+            <video autoPlay loop muted className="case-study-video-2">
+              <source src="/assets/ambiguityinart/personality_vid4.mov" type="video/mp4" />
+            </video>
+            <div className="video-description-2">Personality 4</div>
+          </div>
+        </div>
+        <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
+      </section>
+
+      <section id='final-product' className="final-product">
+        <h3>FINAL PRODUCT</h3>
+        <h2>Bringing it all together</h2>
+
 
       </section>
 

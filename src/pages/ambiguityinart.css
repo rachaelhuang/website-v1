@@ -261,7 +261,7 @@ h3 {
 
 .image-text-container {
   display: grid;
-  grid-template-columns: 25% 75%; /* Two equal columns */
+  grid-template-columns: 25% 75%; 
   align-items: start;  
   margin-bottom: 2rem; 
 }
@@ -280,4 +280,125 @@ h3 {
 .text-container {
   display: flex;
   flex-direction: column;
+}
+
+
+
+.prototyping {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem;
+}
+
+.hifi-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+  gap: 2rem; /* Space between grid items */
+}
+
+.hifi-item {
+  text-align: center; /* Center the text below the image */
+}
+
+.hifi-item img {
+  max-width: 60%; /* Ensure the image fits within its container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+.hifi-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.hifi-container img {
+  max-width: 75%;
+  height: auto;
+}
+
+
+
+.graphics {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem;
+}
+
+.graphics img {
+  max-width: 100%; 
+  height: auto; 
+  display: block; /* Removes any inline spacing */
+  margin: 1rem auto; /* Centers the images horizontally and adds margin around them */
+  border-radius: 15px; 
+}
+
+
+.inspiration-images {
+  display: flex;
+  gap: 1rem; /* Space between images */
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+}
+
+.inspiration-images img {
+  height: 300px; /* Adjust as needed for larger images */
+  width: auto; /* Maintain aspect ratio */
+  max-width: calc(50% - 0.5rem); /* Ensure images fit within their container with some margin */
+  border-radius: 15px;
+  object-fit: cover; /* Ensure images cover the container while maintaining aspect ratio */
+}
+
+/* Optional: Media queries for better responsiveness */
+@media (max-width: 768px) {
+  .inspiration-images img {
+    height: 200px; /* Adjust for smaller screens */
+    max-width: calc(100% - 0.5rem); /* Full width on smaller screens with margin */
+  }
+}
+
+.video-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+
+}
+
+.video-item {
+  flex: 1 1 calc(25% - 1rem); /* Four items in a row, adjusting for gaps */
+  max-width: calc(25% - 1rem);
+  position: relative;
+}
+
+.case-study-video-2 {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3); /* Drop shadow */
+  display: block; /* Ensure it’s a block element to avoid inline issues */
+}
+
+.video-description-2 {
+  text-align: center;
+  margin-top: 1rem; /* Space between video and description */
+}
+
+/* Optional: Media queries for better responsiveness */
+@media (max-width: 768px) {
+  .video-row {
+    flex-direction: column;
+  }
+
+  .video-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.final-product {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem;
 }

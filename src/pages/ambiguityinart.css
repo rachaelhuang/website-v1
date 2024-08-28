@@ -402,3 +402,23 @@ h3 {
   margin-right: 6rem;
   margin-bottom: 6rem;
 }
+
+.final-product img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.figma-embed-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.takeaways {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem;
+}

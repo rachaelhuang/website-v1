@@ -71,8 +71,8 @@ function AmbiguityInArt() {
       </section>
 
       <section id="product-demo" className="final-product-teaser">
-        <h3>FINAL PRODUCT</h3>
-        <h2>Product Demo</h2>
+        {/* <h3>FINAL PRODUCT</h3> */}
+        <h2>ArtLibs</h2>
         <p>A sneak peek of the prototype and some of its functionalities. Scroll to see the full story below! </p>
         
         <div className="demo-videos-list">
@@ -104,7 +104,7 @@ function AmbiguityInArt() {
       </section>
 
       <section className="partner-requests">
-        <h2>Partner Requests</h2>
+        <h2>Partner requests</h2>
         <p>A number of paintings were preselected from the Hood Museum galleries to be part of the study.
           At our initial meeting, the FINN Lab partners presented a general user flow that would best achieve their research goals:
         </p>
@@ -165,7 +165,7 @@ function AmbiguityInArt() {
     
       <section id='user-research' className="user-research">
         <h3>USER RESEARCH</h3>
-        <h2>User Interviews</h2>
+        <h2>User interviews</h2>
         <p>In order to understand a typical visitor's experience in the Hood Museum, we sat down with various students and faculty across Dartmouth. Each interviewee had a varying degree of interest in museums, or a background in museum art. The goal of our user interviews was to gauge the following:</p>
         <div className="bubble-container">
           <div className="bubble">
@@ -215,7 +215,7 @@ function AmbiguityInArt() {
 
       <section id='ideation' className="ideation">
         <h3>IDEATION</h3>
-        <h2>Sketching the User Flow</h2>
+        <h2>Sketching the user flow</h2>
 
         <p>With our industry research and user research complete, we spent time brainstorming specific requirements and components needed for each feature bucket using a feature spec.</p>
         <img
@@ -280,7 +280,7 @@ function AmbiguityInArt() {
           <div className="hifi-item">
             <img src="../assets/ambiguityinart/hifi1.png" />
             <p> <b>Toggle switch for floor navigation</b> </p>
-            <p style={{textAlign: 'left'}}>I used Photoshop to produce <u>cleaner, higher quality maps</u> of the museum floors that fit the dimensions of a vertical screen.</p>
+            <p style={{textAlign: 'left'}}>The toggle switch was the most intuitive for users. I used Photoshop to produce <u>cleaner, higher quality maps</u> of the museum floors that fit the dimensions of a vertical screen.</p>
           </div>
 
           <div className="hifi-item">
@@ -292,7 +292,7 @@ function AmbiguityInArt() {
           <div className="hifi-item">
             <img src="../assets/ambiguityinart/hifi3.png" />
             <p> <b>MadLibs fill-in page</b> </p>
-            <p style={{textAlign: 'left'}}> We added simple directions to clarify the process for the user. I also included a progress bar on the bottom and throughout the rest of the interpretation pages.</p>
+            <p style={{textAlign: 'left'}}> We added simple directions to clarify the process for the user. I also included a progress bar on the bottom of the page, which would continue for each of the interpretation pages.</p>
           </div>
         </div>
 
@@ -300,71 +300,102 @@ function AmbiguityInArt() {
             <div className="hifi-item">
               <img src="../assets/ambiguityinart/hifi3-5.png" />
               <p> <b>Interpretation pages</b> </p>
-              <p style={{textAlign: 'left'}}>We eventually split up the interpretation ratings into three pages. 
+              <p style={{textAlign: 'left'}}>We eventually split up the interpretation ratings into three pages. That way, we could avoid users changing their ratings too much, and we would also be able to measure the difference in the user's own rating of their own interpretation, as they are asked to rate it before and after reading someone else's interpretation. 
               We also intentionally colored the user's interpretation in blue and the anonymous interpretation in purple to differentiate them. Subconsciously, this association with color 
               For the third interpretation screen, the order of the user's interpretations and the alternative interpretation would be randomized in development to make the ratings as realistic as possible. </p>
             </div>
           </div>        
 
+      <p>We <u>purposely omitted back buttons</u> in any of the activity screens, since we did not want users going back to change their initial ratings after reading an alternative interpretation, as it would interfere with data. </p>
       <p>Because the research study requires the consent of the users, we needed a clear presentation of the study's consent form before allowing the user to engage in the study itself</p>
 
       <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
     </section>
 
 
-      <section id='graphics' class="graphics">
-        <h3>GRAPHICS</h3>
-        <h2>Creating artwork personality animations</h2>
+    <section id='graphics' class="graphics">
+      <h3>GRAPHICS</h3>
+      <h2>Creating artwork personality animations</h2>
 
-        <p>As part of the activity summary, we came up with the idea of presenting an "<u>artwork personality</u>" based on the concept of "listening personalities" from Spotify Wrapped 2022.
-         A user's artwork personality would be based on how they rated each artwork and interpretation throughout the session. The partners wanted a total of four different artwork personalities.
-        </p>
-        
-        <h5 style={{margin: '0'}}>Spotify Wrapped 2022</h5>
-        <div className="inspiration-images">
-          <img src="../assets/ambiguityinart/spotifywrapped_personalities.avif"/>
-          <img src="../assets/ambiguityinart/spotifywrapped_personalitycards.jpg"/>
+      <p>As part of the activity summary, we came up with the idea of presenting an "<u>artwork personality</u>" based on the concept of "listening personalities" from Spotify Wrapped 2022.
+        A user's artwork personality would be based on how they rated each artwork and interpretation throughout the session. The partners wanted a total of four different artwork personalities.
+      </p>
+      
+      <h5 style={{margin: '0'}}>Spotify Wrapped 2022</h5>
+      <div className="inspiration-images">
+        <img src="../assets/ambiguityinart/spotifywrapped_personalities.avif"/>
+        <img src="../assets/ambiguityinart/spotifywrapped_personalitycards.jpg"/>
+      </div>
+
+      <p>Initially, we had envisioned the artwork personalities as static shape images, but I wanted to take it a step further and <u>animate them</u> to make them fun and memorable for the user. I first designed the personality shapes in Adobe Illustrator, according to their names. </p>
+      <img src="../assets/ambiguityinart/personalitygraphics.png" />
+
+      <p>I then used Adobe After Effects to create the animations and generate animation frames, and Photoshop to render the final GIFs. Thus became our four artwork personalities:</p>
+      <div className="video-row">
+        <div className="video-item">
+          <video autoPlay loop muted className="case-study-video-2">
+            <source src="/assets/ambiguityinart/personality_vid1.mov" type="video/mp4" />
+          </video>
+          <div className="video-description-2">Personality 1</div>
         </div>
-
-        <p>Initially, we had envisioned the artwork personalities as static shape images, but I wanted to take it a step further and <u>animate them</u> to make them fun and memorable for the user. I first designed the personality shapes in Adobe Illustrator, according to their names. </p>
-        <img src="../assets/ambiguityinart/personalitygraphics.png" />
-
-        <p>I then used Adobe After Effects to create the animations and generate animation frames, and Photoshop to render the final GIFs. Thus became our four artwork personalities:</p>
-        <div className="video-row">
-          <div className="video-item">
-            <video autoPlay loop muted className="case-study-video-2">
-              <source src="/assets/ambiguityinart/personality_vid1.mov" type="video/mp4" />
-            </video>
-            <div className="video-description-2">Personality 1</div>
-          </div>
-          <div className="video-item">
-            <video autoPlay loop muted className="case-study-video-2">
-              <source src="/assets/ambiguityinart/personality_vid2.mov" type="video/mp4" />
-            </video>
-            <div className="video-description-2">Personality 2</div>
-          </div>
-          <div className="video-item">
-            <video autoPlay loop muted className="case-study-video-2">
-              <source src="/assets/ambiguityinart/personality_vid3.mov" type="video/mp4" />
-            </video>
-            <div className="video-description-2">Personality 3</div>
-          </div>
-          <div className="video-item">
-            <video autoPlay loop muted className="case-study-video-2">
-              <source src="/assets/ambiguityinart/personality_vid4.mov" type="video/mp4" />
-            </video>
-            <div className="video-description-2">Personality 4</div>
-          </div>
+        <div className="video-item">
+          <video autoPlay loop muted className="case-study-video-2">
+            <source src="/assets/ambiguityinart/personality_vid2.mov" type="video/mp4" />
+          </video>
+          <div className="video-description-2">Personality 2</div>
         </div>
-        <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
-      </section>
+        <div className="video-item">
+          <video autoPlay loop muted className="case-study-video-2">
+            <source src="/assets/ambiguityinart/personality_vid3.mov" type="video/mp4" />
+          </video>
+          <div className="video-description-2">Personality 3</div>
+        </div>
+        <div className="video-item">
+          <video autoPlay loop muted className="case-study-video-2">
+            <source src="/assets/ambiguityinart/personality_vid4.mov" type="video/mp4" />
+          </video>
+          <div className="video-description-2">Personality 4</div>
+        </div>
+      </div>
+      <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
+    </section>
 
-      <section id='final-product' className="final-product">
-        <h3>FINAL PRODUCT</h3>
-        <h2>Bringing it all together</h2>
+    <section id='final-product' className="final-product">
+      <h3>FINAL PRODUCT</h3>
+      <h2>Bringing it all together</h2>
+
+      <p>We finished our design process from beginning to end in seven weeks, with a baseline prototype that we handed off to developers.</p>
+      
+      <p>Note: the consent form has been shortened for information privacy, and there is a demographic form in the prototype that is omitted here for the sake of simplicity. :) </p>
+      
+      <div className="figma-embed-wrapper"> 
+        <iframe 
+          style={{ 
+            border: "1px solid rgba(0, 0, 0, 0.2)", 
+            borderRadius: "10px",
+            width: "500px", 
+            height: "800px",
+          }} 
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FJespgSYUOmNzVSWRBW9P1W%2Fpersonal-website%3Fpage-id%3D52%253A25%26node-id%3D305-9616%26viewport%3D-2788%252C-5101%252C0.2%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D305%253A9616%26hide-ui=1" 
+          allowFullScreen
+          >
+        </iframe>
+      </div>
+
+      <p>Style guide</p>
+      <p>After testing with users and discussing with the partners, we decided on the final style guide. </p>
+      <img src="../assets/ambiguityinart/styleguide.png" />
+    </section>
 
 
-      </section>
+    <section id="takeaways" className="takeaways">
+      <h3>REFLECTION</h3>
+      <h2>Takeaways from this project</h2>
+      
+      <p>This project was my first large-scale project with an extensive user base and </p>
+      
+      <p>Made in collaboration with the DALI Lab at Dartmouth College.</p> 
+    </section>
 
     </div>
 

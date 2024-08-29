@@ -1,12 +1,18 @@
 .about {
-    margin-top: 6rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    margin-bottom: 6rem; 
+    display: flex;
+    align-items: top;
+    margin: 6rem;
 }
-
-.about-text {
+  
+  .about-image {
+    max-width: 25%;
+    margin-right: 2rem;
+    border-radius: 15px;
+}
+  
+  .about-text {
     font-family: 'Outfit';
     font-weight: 300;
     text-align: left;
-}
+    flex: 1; /* This makes sure the text takes up the remaining space */
+  }

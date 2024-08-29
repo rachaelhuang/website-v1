@@ -34,7 +34,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   z-index: 1; /* Ensure the shadow is above the image but below the content */
 }
 
@@ -87,20 +87,20 @@ h3 {
 
 .overview {
   margin-top: 2rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem; 
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem; 
 }
 
 .final-product-teaser {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem; 
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem; 
 }
 
 .demo-videos-list {
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
 .demo-section {
@@ -113,7 +113,7 @@ h3 {
 
 .video-container {
   position: relative;
-  width: auto;
+  width: 300px;
   height: auto;
   margin: 0;
 }
@@ -143,15 +143,16 @@ h3 {
 
 .video-description {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
   padding: 1rem;
 }
 
 .partner-requests {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem; 
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem; 
 }
 
 .user-flow {
@@ -161,7 +162,7 @@ h3 {
   flex-wrap: wrap; /* allows wrapping on smaller screens */
   gap: 20px;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 .flow-step {
@@ -192,21 +193,21 @@ h3 {
   background-color: #dcedea;
   border-radius: 15px;
   padding: 1rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem; /* Added margin-bottom */
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem; /* Added margin-bottom */
 }
 
 .industry-research {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem; 
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem; 
 }
 
 .user-research {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem; 
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem; 
 }
 
 .bubble-container {
@@ -230,9 +231,9 @@ h3 {
 
 
 .data-analysis {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem; 
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem; 
 }
 
 .empathy-maps {
@@ -240,9 +241,9 @@ h3 {
 }
 
 .ideation {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem; /* Added margin-bottom */
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem; /* Added margin-bottom */
 }
 
 .ideation img {
@@ -250,9 +251,9 @@ h3 {
 }
 
 .design-process {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem;
 }
 
 .design-process img {
@@ -285,9 +286,9 @@ h3 {
 
 
 .prototyping {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem;
 }
 
 .hifi-grid-container {
@@ -320,9 +321,9 @@ h3 {
 
 
 .graphics {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem;
 }
 
 .graphics img {
@@ -398,9 +399,9 @@ h3 {
 }
 
 .final-product {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem;
 }
 
 .final-product img {
@@ -418,7 +419,7 @@ h3 {
 
 
 .takeaways {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 6rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem;
 }

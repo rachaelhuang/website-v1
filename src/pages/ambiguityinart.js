@@ -59,11 +59,13 @@ function AmbiguityInArt() {
 
       <section id="overview" className="overview">
         <h2>Project Overview</h2>
-        <p>Different people can see the same image, but reach vastly different conclusions. The <a href="https://thefinnlab.github.io" target="_blank" rel="noopener noreferrer">FINN Lab</a>, a neuroscience lab at Dartmouth, is studying the implications of those differences in perception, and how they may inform phenomena such as mental health and politics.</p>
+        <p>Different people can see the same image, but reach vastly different conclusions. The <a href="https://thefinnlab.github.io" target="_blank" rel="noopener noreferrer">FINN Lab</a>, a neuroscience lab at Dartmouth,
+        is studying the implications of those differences in perception, and how they may inform phenomena such as mental health and politics.</p>
         <p>In previous studies, the FINN Lab team utilized a controlled lab setting where they gathered data through pen-and-paper surveys.
-            However, they wanted to expand their form of data collection through visitors of Dartmouth's art museum, the Hood Museum of Art.
+            However, they wanted to expand their form of data collection through visitors of Dartmouth's art museum, the <a href="https://hoodmuseum.dartmouth.edu/" target="_blank" rel="noopener noreferrer">Hood Museum of Art</a>.
             They envisioned a mobile 'edutainment' experience that allows museum-goers to enjoy an <b>interactive digital journey</b>, enabling them to <b>engage directly with the artwork before them</b>.
-            Our team was tasked with designing and developing a mobile app that allows Hood Museum visitors to interpret artworks through a <u>Mad-Libs style activity</u>.</p>
+        <p> Our team was tasked with designing and developing a mobile app that allows Hood Museum visitors to interpret artworks through a <u>Mad-Libs style activity</u>.</p>
+        </p>
 
         <h4>Key Partners</h4>
         <p>Throughout the 10 week sprint, we met weekly with FINN Lab reps Professor Emily Finn and graduate student Clara Sava-Segal for reviews, standups, and feedback.</p>
@@ -71,42 +73,61 @@ function AmbiguityInArt() {
       </section>
 
       <section id="product-demo" className="final-product-teaser">
-        {/* <h3>FINAL PRODUCT</h3> */}
+        <h3>PRESENTING...</h3>
         <h2>ArtLibs</h2>
-        <p>A sneak peek of the prototype and some of its functionalities. Scroll to see the full story below! </p>
         
         <div className="demo-videos-list">
-          <div className="demo-section"> 
+          
+          <div className="demo-section">
+            <div className="video-description">
+              <h4>Select an artwork to interpret</h4>
+              <p>Users can navigate through a map of the Hood Museum and click on paintings that are part of the study. </p>
+            </div>
+
             <div className="video-container">
               <video autoPlay loop muted className="case-study-video">
                 <source src="/assets/ambiguityinart/ambiguityinart_demovid1.mov" type="video/mp4" />
               </video>
               <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
             </div>
+          </div>
+
+          <div className="demo-section"> 
+            <div className="video-container">
+              <video autoPlay loop muted className="case-study-video">
+                <source src="/assets/ambiguityinart/demovid2.mov" type="video/mp4" />
+              </video>
+              <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+            </div>
             <div className="video-description">
-              <p>Navigate through the Hood Museum map, and click on paintings that are part of the study. </p>
+              <h4>Rate interpretations</h4>
+              <p>A simple but fun Mad-Libs activity allows the user to rate their interpretation, and the interpretation of another random user. </p>
             </div>
           </div>
 
           <div className="demo-section"> 
+            <div className="video-description">
+              <h4>See your activity summary</h4>
+              <p>At the end of a session, users receive personalized summary stats including their top artworks and an artwork personality -- all determined by their interpretations. </p>
+            </div>
             <div className="video-container">
               <video autoPlay loop muted className="case-study-video">
                 <source src="/assets/ambiguityinart/ambiguityinart_demovid2.mov" type="video/mp4" />
               </video>
               <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
             </div>
-            <div className="video-description">
-              <p>Get personalized summary stats at the end of your museum session, including your artwork personality -- all determined by your interpretations. </p>
-            </div>
           </div>
+
         </div>
         <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
       </section>
 
+
       <section className="partner-requests">
-        <h2>Partner requests</h2>
-        <p>A number of paintings were preselected from the Hood Museum galleries to be part of the study.
-          At our initial meeting, the FINN Lab partners presented a general user flow that would best achieve their research goals:
+        <h3>SETTING THE STAGE</h3>
+        <h2>Navigating partner requests</h2>
+        <p>The FINN Lab partners preselected a number of paintings from the Hood Museum to be part of the study.
+          At our first meeting, the partners presented a general user flow that would best achieve their research goals:
         </p>
         
         <div className="user-flow">
@@ -118,13 +139,15 @@ function AmbiguityInArt() {
           <div className="flow-step">Activity summary at the end of session</div>
         </div>
         
-        <p>With this outline from the get-go, we needed to ensure we could <strong> balance an enjoyable user experience alongside the requirements and goals of a scientific study</strong>. 
+        <p>From the get-go, we needed to ensure we could <strong> balance an enjoyable user experience alongside the requirements and goals of a scientific study</strong>. 
           For example, the partners needed to record quantitative data from the ratings, but not make it obvious to the users, which we needed our designs to reflect.
           Down the line, we would need to separate some screens and include extra instructions to ensure that participants used the app correctly.
         </p>
+        
       </section>
 
       <section id="problem-statement" className="problem-statement">
+        <p>From here, we asked ourselves:</p>
         <h2 style={{ fontStyle: 'italic', fontSize: '30px'}}>How might we...</h2>
         <p>facilitate a research study on how people interpret art while making their museum experience enjoyable?</p>
       </section>
@@ -233,7 +256,8 @@ function AmbiguityInArt() {
 
         <p>We defined a wireflow to ensure that the layout of the screens were clear and easy to understand.</p>
         <img src="../assets/ambiguityinart/wireflow.png"/>
-  
+
+        <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
       </section>
 
       
@@ -266,7 +290,10 @@ function AmbiguityInArt() {
           <img src="../assets/ambiguityinart/grayscales3.png" />
         </div>
 
-        <p>From then, we sought user feedback and discussed which features had the best usability. </p>
+        <p>From then, we sought user feedback and discussed which features had the best usability.</p>
+
+
+
 
         <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
       </section>
@@ -292,7 +319,7 @@ function AmbiguityInArt() {
           <div className="hifi-item">
             <img src="../assets/ambiguityinart/hifi3.png" />
             <p> <b>MadLibs fill-in page</b> </p>
-            <p style={{textAlign: 'left'}}> We added simple directions to clarify the process for the user. I also included a progress bar on the bottom of the page, which would continue for each of the interpretation pages.</p>
+            <p style={{textAlign: 'left'}}> We added simple directions to clarify the process for the user. I also included a progress bar on the bottom of the page, which would continue throughout each of the interpretation pages.</p>
           </div>
         </div>
 
@@ -300,7 +327,7 @@ function AmbiguityInArt() {
             <div className="hifi-item">
               <img src="../assets/ambiguityinart/hifi3-5.png" />
               <p> <b>Interpretation pages</b> </p>
-              <p style={{textAlign: 'left'}}>We eventually split up the interpretation ratings into three pages. That way, we could avoid users changing their ratings too much, and we would also be able to measure the difference in the user's own rating of their own interpretation, as they are asked to rate it before and after reading someone else's interpretation. 
+              <p style={{textAlign: 'left'}}>We eventually split up the interpretation ratings into three pages to avoid overwhelming the user with too much information at one time. That way, we could avoid users changing their ratings too much, and we would also be able to measure the difference in the user's own rating of their own interpretation, as they are asked to rate it before and after reading someone else's interpretation. 
               We also intentionally colored the user's interpretation in blue and the anonymous interpretation in purple to differentiate them. Subconsciously, this association with color 
               For the third interpretation screen, the order of the user's interpretations and the alternative interpretation would be randomized in development to make the ratings as realistic as possible. </p>
             </div>
@@ -315,10 +342,10 @@ function AmbiguityInArt() {
 
     <section id='graphics' class="graphics">
       <h3>GRAPHICS</h3>
-      <h2>Creating artwork personality animations</h2>
+      <h2>Creating simple animations</h2>
 
       <p>As part of the activity summary, we came up with the idea of presenting an "<u>artwork personality</u>" based on the concept of "listening personalities" from Spotify Wrapped 2022.
-        A user's artwork personality would be based on how they rated each artwork and interpretation throughout the session. The partners wanted a total of four different artwork personalities.
+        A user's artwork personality would be based on how they rated each artwork and interpretation throughout the session.
       </p>
       
       <h5 style={{margin: '0'}}>Spotify Wrapped 2022</h5>
@@ -327,10 +354,10 @@ function AmbiguityInArt() {
         <img src="../assets/ambiguityinart/spotifywrapped_personalitycards.jpg"/>
       </div>
 
-      <p>Initially, we had envisioned the artwork personalities as static shape images, but I wanted to take it a step further and <u>animate them</u> to make them fun and memorable for the user. I first designed the personality shapes in Adobe Illustrator, according to their names. </p>
+      <p>The partners wanted a total of four different artwork personalities. Initially, we had envisioned the artwork personalities as static shape images, but I wanted to take it a step further. I decided to <u>animate them</u> to make the personalities fun and memorable for the user. I first designed the personality shapes in Adobe Illustrator, according to their names. </p>
       <img src="../assets/ambiguityinart/personalitygraphics.png" />
 
-      <p>I then used Adobe After Effects to create the animations and generate animation frames, and Photoshop to render the final GIFs. Thus became our four artwork personalities:</p>
+      <p>I then used Adobe After Effects to create the animations and generate animation frames, which I then rendered in Photoshop. Thus became our four artwork personalities:</p>
       <div className="video-row">
         <div className="video-item">
           <video autoPlay loop muted className="case-study-video-2">
@@ -364,9 +391,14 @@ function AmbiguityInArt() {
       <h3>FINAL PRODUCT</h3>
       <h2>Bringing it all together</h2>
 
-      <p>We finished our design process from beginning to end in seven weeks, with a baseline prototype that we handed off to developers.</p>
+      <p>After testing with potential users and discussions with the partners, we decided on the final style guide as we prepared for handoff. We followed the color palette of the FINN Lab logo, keeping it simple and modern. </p>
+      <img src="../assets/ambiguityinart/styleguide.png" />
+
+      <p>We finished our design process from beginning to end in <u>seven weeks</u>, handing it off to our developers.</p>
       
-      <p>Note: the consent form has been shortened for information privacy, and there is a demographic form in the prototype that is omitted here for the sake of simplicity. :) </p>
+      <h4>Final Prototype</h4>
+      <p>Below is a prototype of ArtLibs where you can simulate interpreting one of the artworks in the study. By ending the session, you can view the activity summary.
+        (Note: the consent form has been shortened for information privacy, and there is a demographic form in the prototype that is omitted here for the sake of simplicity.) </p>
       
       <div className="figma-embed-wrapper"> 
         <iframe 
@@ -382,9 +414,7 @@ function AmbiguityInArt() {
         </iframe>
       </div>
 
-      <p>Style guide</p>
-      <p>After testing with users and discussing with the partners, we decided on the final style guide. </p>
-      <img src="../assets/ambiguityinart/styleguide.png" />
+      <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
     </section>
 
 
@@ -392,14 +422,23 @@ function AmbiguityInArt() {
       <h3>REFLECTION</h3>
       <h2>Takeaways from this project</h2>
       
-      <p>This project was my first large-scale project with an extensive user base and </p>
+      <p>ArtLibs was my first large-scale product design project, and I am grateful to have learned so much from it and to have worked with such a wonderful team. We presented our project at Technigala, Dartmouth's quarterly tech showcase, at the end of the term.</p>
       
-      <p>Made in collaboration with the DALI Lab at Dartmouth College.</p> 
+      <h4 style={{fontWeight: '500'}}>What I learned:</h4>      
+      <p> <u>Effective communication with partners:</u> We communicated regularly with the FINN Lab partners to ensure that the project remained aligned with their goals. This collaboration was key in addressing any challenges promptly and integrating feedback effectively throughout our design process.</p>
+      
+      <p> <u>Balancing partner demands and engagement</u>: Designing an app that simultaneously met the research needs of the FINN Lab, while also maintaining an engaging and enjoyable user experience, required a lot of iteration and feedback.
+      The balance between collecting accurate data and providing an enjoyable user experience was crucial.</p>
+
+      <p> <u>Importance of thorough research:</u> Conducting extensive research on existing museum apps and pinpointing user needs from interviews was vital. 
+      This groundwork helped us identify key features that could be incorporated into the app, and ensured they would align with our user’s needs.</p>
+
+      <p> <u>Interdisciplinary collaboration:</u> With multiple designers and developers in our team, clear and consistent communication was crucial. Regular meetings and iterative feedback ensured that our design vision was accurately translated into a polished, functional product, allowing us to quickly resolve any technical challenges.</p>
+
+      <p> <i>Made in collaboration with the DALI Lab</i></p> 
     </section>
 
     </div>
-
-
   );
 }
 

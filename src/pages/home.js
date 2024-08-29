@@ -6,13 +6,13 @@ function Home() {
   return (
     <div> 
       <div className="splash-screen">
-        <h1>Hi! I'm Rachael</h1>
+        <h1>Hi! I'm Rachael Huang</h1>
         <p>A full-stack product designer who loves to create unique digital experiences.</p>
         <a href="#my-projects" className="see-my-work-button">See my work</a>
       </div>
 
-      <div id="my-projects" className="projects-section">
-        <h2>My Projects</h2>
+      <div id="featured-projects" className="projects-section">
+        <h2>Featured Projects</h2>
         <div className="project-list">
 
           <div className="project-item">

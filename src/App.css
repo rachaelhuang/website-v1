@@ -16,7 +16,10 @@ body {
   /* font-family: 'Rubik'; */
   font-family: 'Outfit';
   font-size: 17px;
+  cursor: url('../public/assets/circle-point-cursor.png');
 }
+
+
 
 .App {
   text-align: center;

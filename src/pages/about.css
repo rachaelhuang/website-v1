@@ -1,0 +1,12 @@
+.about {
+    margin-top: 6rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 6rem; 
+}
+
+.about-text {
+    font-family: 'Outfit';
+    font-weight: 300;
+    text-align: left;
+}

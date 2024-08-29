@@ -33,8 +33,8 @@ const Navbar = () => {
           <img src="/RH.svg" alt="Rachael Huang" className="logo" />
         </Link>
         <ul className="navbar-menu">
-          <li><Link to="/work">Work</Link></li>
-          <li><Link to="/play">Play</Link></li>
+          {/* <li><Link to="/work">Work</Link></li> */}
+          {/* <li><Link to="/play">Play</Link></li> */}
           <li><Link to="/about">About</Link></li>
         </ul>
       </div>

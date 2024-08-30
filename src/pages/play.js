@@ -53,7 +53,7 @@ function Play() {
 
       <div className="modal" id="modal">
         <span className="close" id="modal-close" onClick={closeModal}>&times;</span>
-          <img className="modal-content" id="modal-image" />
+          <img className="modal-content" id="modal-image" alt="modal" />
         <div id="caption"></div>
       </div>
     </div>

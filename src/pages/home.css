@@ -9,27 +9,26 @@ html {
   justify-content: center;
   height: 100vh;
   text-align: center;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #a4bee5;
+  color: #1d2f5a;
   animation: fadeIn 1.5s ease-in-out;
 }
 
 .splash-screen h1 {
   font-size: 3rem;
+  font-weight: '200';
   margin-bottom: 1rem;
-  /* font-family: 'DM Sans', sans-serif; */
 }
 
 .splash-screen p {
   font-size: 1.5rem;
-  /* font-family: 'DM Sans', sans-serif; */
 }
 
 .see-my-work-button {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #084BA2; 
+  background-color: #2964b1; 
   color: #f0f0f0; 
   text-decoration: none;
   font-weight: bold;
@@ -38,7 +37,7 @@ html {
 }
 
 .see-my-work-button:hover {
-  background-color: #4564c1;
+  background-color: #5a8adf;
 }
 
 @keyframes fadeIn {

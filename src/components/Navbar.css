@@ -33,12 +33,13 @@
 
 .navbar-menu li a {
   text-decoration: none;
-  color: #333; 
+  color: #2d2d2d; 
   font-weight: bold;
 }
 
 .navbar-menu a:hover {
-  color: #06737c; /* Change text color on hover */
-  border: 2px solid #276b65; /* Border color and width */
-  border-radius: 4px; /* Rounded corners (optional) */
+  /* color: #b9deff; Change text color on hover */
+  border: 2px solid #ffffff; /* Border color and width */
+  border-radius: 10px; 
+  padding: 5px 10px; 
 }

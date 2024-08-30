@@ -1,6 +1,7 @@
 import React from 'react';
 import './ambiguityinart.css';
 import ProgressBar from '../components/ProgressBar';
+import { motion } from 'framer-motion';
 
 
 function AmbiguityInArt() {
@@ -88,7 +89,7 @@ function AmbiguityInArt() {
               <video autoPlay loop muted className="case-study-video">
                 <source src="/assets/ambiguityinart/ambiguityinart_demovid1.mov" type="video/mp4" />
               </video>
-              <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+              <img src="/assets/ambiguityinart/iphone15frame.png" alt="" className="case-study-video-frame"/>
             </div>
           </div>
 
@@ -97,7 +98,7 @@ function AmbiguityInArt() {
               <video autoPlay loop muted className="case-study-video">
                 <source src="/assets/ambiguityinart/demovid2.mov" type="video/mp4" />
               </video>
-              <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+              <img src="/assets/ambiguityinart/iphone15frame.png" alt="" className="case-study-video-frame"/>
             </div>
             <div className="video-description">
               <h4>Rate interpretations</h4>
@@ -114,7 +115,7 @@ function AmbiguityInArt() {
               <video autoPlay loop muted className="case-study-video">
                 <source src="/assets/ambiguityinart/ambiguityinart_demovid2.mov" type="video/mp4" />
               </video>
-              <img src="/assets/ambiguityinart/iphone15frame.png" className="case-study-video-frame"/>
+              <img src="/assets/ambiguityinart/iphone15frame.png" alt="" className="case-study-video-frame"/>
             </div>
           </div>
 
@@ -163,6 +164,7 @@ function AmbiguityInArt() {
         <div style={{ backgroundColor: '#f0f0f0', padding: '1rem', display: 'inline-block', borderRadius: '15px' }}>
           <img
             src="../assets/ambiguityinart/industryresearchvisual.png"
+            alt="ArtLibs industry research"
             className="case-study-image"
           />
         </div>
@@ -171,6 +173,7 @@ function AmbiguityInArt() {
         <div style={{ backgroundColor: '#f0f0f0', padding: '1rem', display: 'inline-block', borderRadius: '15px' }}>
           <img
             src="../assets/ambiguityinart/industryresearch_visual2.png"
+            alt="ArtLibs industry research"
             className="case-study-image"
           />
         </div>
@@ -207,7 +210,7 @@ function AmbiguityInArt() {
       <section className="data-analysis">
         <h2>Data analysis</h2>
         <p>After our user interviews, we synthesized our findings into <strong>empathy maps</strong>. We organized our findings into what interviewees say, do, think, and feel.</p>
-        <img src="../assets/ambiguityinart/empathymaps.png" className="empathy-maps" alt="Empathy Maps"/>
+        <img src="../assets/ambiguityinart/empathymaps.png" className="empathy-maps" alt="ArtLibs empathy maps"/>
         
         <p>From our research, we gathered these key insights:</p>
         <ul>
@@ -244,18 +247,18 @@ function AmbiguityInArt() {
         <img
           src="../assets/ambiguityinart/featureidentification.png"
           className="case-study-image"
+          alt="ArtLibs ideation"
         />
 
         <p>Following this, each designer started off with a set of rapid fire sketches (Crazy 8s) as our initial screen ideations.
         After our initial sketches, we refined them into solution sketches.</p>
-        <img src="../assets/ambiguityinart/crazy8s.png"/>
-
-        <img src="../assets/ambiguityinart/solutionsketches.png"/>
-        <img src="../assets/ambiguityinart/solutionsketches2.png"/>
-        <img src="../assets/ambiguityinart/solutionsketches3.png"/>
+        <img src="../assets/ambiguityinart/crazy8s.png" alt="ArtLibs sketch"/>
+        <img src="../assets/ambiguityinart/solutionsketches.png" alt="ArtLibs sketch"/>
+        <img src="../assets/ambiguityinart/solutionsketches2.png" alt="ArtLibs sketch"/>
+        <img src="../assets/ambiguityinart/solutionsketches3.png" alt="ArtLibs sketch"/>
 
         <p>We defined a wireflow to ensure that the layout of the screens were clear and easy to understand.</p>
-        <img src="../assets/ambiguityinart/wireflow.png"/>
+        <img src="../assets/ambiguityinart/wireflow.png" alt="ArtLibs wireflow"/>
 
         <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
       </section>
@@ -271,7 +274,7 @@ function AmbiguityInArt() {
             <h4>Floor toggle</h4>
             <p> There are two floors of the Hood Museum, and artworks in the study would be on both floors. We needed a feature to access each of the two floor maps. Each of us came up with different toggle components. </p>
           </div>
-          <img src="../assets/ambiguityinart/grayscales1.png" />
+          <img src="../assets/ambiguityinart/grayscales1.png" alt="ArtLibs grayscales" />
        </div>
   
         <div class="image-text-container">
@@ -279,7 +282,7 @@ function AmbiguityInArt() {
             <h4>Artwork selection </h4>
             <p>The user needed to be able to select an artwork from the map to be brought to the Mad-Libs activity. We came up with four different ways in which users could select an artwork.</p>
           </div>
-          <img src="../assets/ambiguityinart/grayscales2.png" />
+          <img src="../assets/ambiguityinart/grayscales2.png" alt="ArtLibs grayscales" />
         </div>
 
         <div class="image-text-container">
@@ -287,13 +290,11 @@ function AmbiguityInArt() {
             <h4>Interpretation ratings </h4>
             <p>A user had to rate their own artwork interpretations, as well as another anonymous user's interpretation. We ordered the interpretations and ratings slightly differently, which was great for comparing and contrasting.</p>
           </div>
-          <img src="../assets/ambiguityinart/grayscales3.png" />
+          <img src="../assets/ambiguityinart/grayscales3.png" alt="ArtLibs grayscales" />
         </div>
 
         <p>From then, we sought user feedback and discussed which features had the best usability.</p>
-
-
-
+  
 
         <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
       </section>
@@ -305,19 +306,19 @@ function AmbiguityInArt() {
         
         <div className="hifi-grid-container">
           <div className="hifi-item">
-            <img src="../assets/ambiguityinart/hifi1.png" />
+            <img src="../assets/ambiguityinart/hifi1.png" alt="ArtLibs hifis" />
             <p> <b>Toggle switch for floor navigation</b> </p>
             <p style={{textAlign: 'left'}}>The toggle switch was the most intuitive for users. I used Photoshop to produce <u>cleaner, higher quality maps</u> of the museum floors that fit the dimensions of a vertical screen.</p>
           </div>
 
           <div className="hifi-item">
-            <img src="../assets/ambiguityinart/hifi2.png" />
+            <img src="../assets/ambiguityinart/hifi2.png" alt="ArtLibs hifis"/>
             <p> <b>Simple artwork popup</b> </p>
             <p style={{textAlign: 'left'}}>For the study's purposes, we decided to label each artwork as "Artwork [Number]" to avoid biasing user's interpretations.</p>
           </div> 
 
           <div className="hifi-item">
-            <img src="../assets/ambiguityinart/hifi3.png" />
+            <img src="../assets/ambiguityinart/hifi3.png" alt="ArtLibs hifis"/>
             <p> <b>MadLibs fill-in page</b> </p>
             <p style={{textAlign: 'left'}}> We added simple directions to clarify the process for the user. I also included a progress bar on the bottom of the page, which would continue throughout each of the interpretation pages.</p>
           </div>
@@ -325,7 +326,7 @@ function AmbiguityInArt() {
 
           <div className="hifi-container">
             <div className="hifi-item">
-              <img src="../assets/ambiguityinart/hifi3-5.png" />
+              <img src="../assets/ambiguityinart/hifi3-5.png" alt="ArtLibs hifis" />
               <p> <b>Interpretation pages</b> </p>
               <p style={{textAlign: 'left'}}>We eventually split up the interpretation ratings into three pages to avoid overwhelming the user with too much information at one time. That way, we could avoid users changing their ratings too much, and we would also be able to measure the difference in the user's own rating of their own interpretation, as they are asked to rate it before and after reading someone else's interpretation. 
               We also intentionally colored the user's interpretation in blue and the anonymous interpretation in purple to differentiate them. Subconsciously, this association with color 
@@ -334,7 +335,6 @@ function AmbiguityInArt() {
           </div>        
 
       <p>We <u>purposely omitted back buttons</u> in any of the activity screens, since we did not want users going back to change their initial ratings after reading an alternative interpretation, as it would interfere with data. </p>
-      <p>Because the research study requires the consent of the users, we needed a clear presentation of the study's consent form before allowing the user to engage in the study itself</p>
 
       <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
     </section>
@@ -350,12 +350,12 @@ function AmbiguityInArt() {
       
       <h5 style={{margin: '0'}}>Spotify Wrapped 2022</h5>
       <div className="inspiration-images">
-        <img src="../assets/ambiguityinart/spotifywrapped_personalities.avif"/>
-        <img src="../assets/ambiguityinart/spotifywrapped_personalitycards.jpg"/>
+        <img src="../assets/ambiguityinart/spotifywrapped_personalities.avif" alt="Spotify Wrapped 2022"/>
+        <img src="../assets/ambiguityinart/spotifywrapped_personalitycards.jpg" alt="Spotify Wrapped 2022"/>
       </div>
 
       <p>The partners wanted a total of four different artwork personalities. Initially, we had envisioned the artwork personalities as static shape images, but I wanted to take it a step further. I decided to <u>animate them</u> to make the personalities fun and memorable for the user. I first designed the personality shapes in Adobe Illustrator, according to their names. </p>
-      <img src="../assets/ambiguityinart/personalitygraphics.png" />
+      <img src="../assets/ambiguityinart/personalitygraphics.png" alt="Artlibs personality graphics"/>
 
       <p>I then used Adobe After Effects to create the animations and generate animation frames, which I then rendered in Photoshop. Thus became our four artwork personalities:</p>
       <div className="video-row">
@@ -392,7 +392,7 @@ function AmbiguityInArt() {
       <h2>Bringing it all together</h2>
 
       <p>After testing with potential users and discussions with the partners, we decided on the final style guide as we prepared for handoff. We followed the color palette of the FINN Lab logo, keeping it simple and modern. </p>
-      <img src="../assets/ambiguityinart/styleguide.png" />
+      <img src="../assets/ambiguityinart/styleguide.png" alt="Artlibs style guide" />
 
       <p>We finished our design process from beginning to end in <u>seven weeks</u>, handing it off to our developers.</p>
       
@@ -402,6 +402,7 @@ function AmbiguityInArt() {
       
       <div className="figma-embed-wrapper"> 
         <iframe 
+          title="Artlibs interactive prototype"
           style={{ 
             border: "1px solid rgba(0, 0, 0, 0.2)", 
             borderRadius: "10px",

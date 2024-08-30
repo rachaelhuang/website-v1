@@ -210,9 +210,10 @@ function AmbiguityInArt() {
       <section className="data-analysis">
         <h2>Data analysis</h2>
         <p>After our user interviews, we synthesized our findings into <strong>empathy maps</strong>. We organized our findings into what interviewees say, do, think, and feel.</p>
-        <img src="../assets/ambiguityinart/empathymaps.png" className="empathy-maps" alt="ArtLibs empathy maps"/>
         
-        <p>From our research, we gathered these key insights:</p>
+        <img style={{ backgroundColor: '#f0f0f0', borderRadius: '15px', maxWidth: '80%', paddingLeft: '5rem', paddingRight: '5rem', marginTop: '3rem', marginBottom: '3rem'}} src="../assets/ambiguityinart/empathymaps.png" className="case-study-image" alt="ArtLibs empathy maps"/>
+        
+        <p>From our research, we gathered these key insights to help us with ideation:</p>
         <ul>
           <p> 
             <b style={{ color: '#6bb0a3', fontSize: '22px' }}>1.</b>
@@ -251,14 +252,14 @@ function AmbiguityInArt() {
         />
 
         <p>Following this, each designer started off with a set of rapid fire sketches (Crazy 8s) as our initial screen ideations.
-        After our initial sketches, we refined them into solution sketches.</p>
-        <img src="../assets/ambiguityinart/crazy8s.png" alt="ArtLibs sketch"/>
-        <img src="../assets/ambiguityinart/solutionsketches.png" alt="ArtLibs sketch"/>
-        <img src="../assets/ambiguityinart/solutionsketches2.png" alt="ArtLibs sketch"/>
-        <img src="../assets/ambiguityinart/solutionsketches3.png" alt="ArtLibs sketch"/>
+        After our initial sketches, we refined them into solution sketches. Below are just a few of those sketches:</p>
+        <img src="../assets/ambiguityinart/crazy8s.png" className='case-study-image' alt="ArtLibs sketch"/>
+        <img src="../assets/ambiguityinart/solutionsketches.png" className='case-study-image' alt="ArtLibs sketch"/>
+        <img src="../assets/ambiguityinart/solutionsketches2.png" className='case-study-image' alt="ArtLibs sketch"/>
+        <img src="../assets/ambiguityinart/solutionsketches3.png" className='case-study-image' alt="ArtLibs sketch"/>
 
-        <p>We defined a wireflow to ensure that the layout of the screens were clear and easy to understand.</p>
-        <img src="../assets/ambiguityinart/wireflow.png" alt="ArtLibs wireflow"/>
+        <p>We then defined a wireflow to ensure that the layout of the screens were clear and easy to understand.</p>
+        <img style= {{ backgroundColor: '#f5f5f5', borderRadius: '15px', maxWidth: '80%', paddingLeft: '5rem', paddingRight: '5rem', marginTop: '3rem'}} src="../assets/ambiguityinart/wireflow.png" className='case-study-image' alt="ArtLibs wireflow"/>
 
         <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
       </section>
@@ -267,7 +268,7 @@ function AmbiguityInArt() {
       <section id='design-process' className="design-process">
         <h3>DESIGN</h3>
         <h2>Grayscales</h2>
-        <p>After the wireflow, each designer created our own grayscale screens. After initial iterations, we came together to discuss and noticed what we differed in our designs.</p>
+        <p>After defining the wireflow, each designer created our own grayscale screens. After initial iterations, we came together to discuss and noticed what we differed in our designs.</p>
 
         <div class="image-text-container">
           <div class="text-container">
@@ -293,7 +294,7 @@ function AmbiguityInArt() {
           <img src="../assets/ambiguityinart/grayscales3.png" alt="ArtLibs grayscales" />
         </div>
 
-        <p>From then, we sought user feedback and discussed which features had the best usability.</p>
+        <p>From there, we sought user feedback in order to narrow down which features had the best usability among potential users.</p>
   
 
         <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
@@ -328,13 +329,14 @@ function AmbiguityInArt() {
             <div className="hifi-item">
               <img src="../assets/ambiguityinart/hifi3-5.png" alt="ArtLibs hifis" />
               <p> <b>Interpretation pages</b> </p>
-              <p style={{textAlign: 'left'}}>We eventually split up the interpretation ratings into three pages to avoid overwhelming the user with too much information at one time. That way, we could avoid users changing their ratings too much, and we would also be able to measure the difference in the user's own rating of their own interpretation, as they are asked to rate it before and after reading someone else's interpretation. 
-              We also intentionally colored the user's interpretation in blue and the anonymous interpretation in purple to differentiate them. Subconsciously, this association with color 
-              For the third interpretation screen, the order of the user's interpretations and the alternative interpretation would be randomized in development to make the ratings as realistic as possible. </p>
+              <p style={{textAlign: 'left'}}> We spent the most amount of time on these pages. We eventually split up the interpretation rating stage into three screens for a few reasons. We wanted to avoid overwhelming the user with too much information at a time.
+              Additionally, this way we could avoid users going back to change their ratings, and by asking the user to re-rate their own interpretation, we would also be able <u>gather more data</u> by measuring how much the user changed the rating of their own interpretation.
+              <p>We also intentionally colored the user's interpretation in blue and the anonymous interpretation in purple to differentiate them. This association with color subconsciously helps users distinguish between their own and others' interpretations. </p> 
+              For the third interpretation screen, the order of the user's interpretations and the alternative interpretation would be randomized in development to make the ratings as accurate as possible. </p>
             </div>
           </div>        
 
-      <p>We <u>purposely omitted back buttons</u> in any of the activity screens, since we did not want users going back to change their initial ratings after reading an alternative interpretation, as it would interfere with data. </p>
+      <p>As a design choice, we <u>purposely omitted back buttons</u> in any of the activity screens, since we did not want users going back to change their initial ratings after reading an alternative interpretation, as it would interfere with data. </p>
 
       <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
     </section>
@@ -345,7 +347,7 @@ function AmbiguityInArt() {
       <h2>Creating simple animations</h2>
 
       <p>As part of the activity summary, we came up with the idea of presenting an "<u>artwork personality</u>" based on the concept of "listening personalities" from Spotify Wrapped 2022.
-        A user's artwork personality would be based on how they rated each artwork and interpretation throughout the session.
+        A user's artwork personality would be based on how they rated each artwork and interpretation throughout the session, similar to how Spotify's listening personalities were based on a user's top songs and genres.
       </p>
       
       <h5 style={{margin: '0'}}>Spotify Wrapped 2022</h5>
@@ -394,7 +396,7 @@ function AmbiguityInArt() {
       <p>After testing with potential users and discussions with the partners, we decided on the final style guide as we prepared for handoff. We followed the color palette of the FINN Lab logo, keeping it simple and modern. </p>
       <img src="../assets/ambiguityinart/styleguide.png" alt="Artlibs style guide" />
 
-      <p>We finished our design process from beginning to end in <u>seven weeks</u>, handing it off to our developers.</p>
+      <p>We finished our design process from beginning to end in <u>six weeks</u>, handing it off to our developers to complete development with the remaining 4 weeks of the term.</p>
       
       <h4>Final Prototype</h4>
       <p>Below is a prototype of ArtLibs where you can simulate interpreting one of the artworks in the study. By ending the session, you can view the activity summary.
@@ -426,17 +428,20 @@ function AmbiguityInArt() {
       <p>ArtLibs was my first large-scale product design project, and I am grateful to have learned so much from it and to have worked with such a wonderful team. We presented our project at Technigala, Dartmouth's quarterly tech showcase, at the end of the term.</p>
       
       <h4 style={{fontWeight: '500'}}>What I learned:</h4>      
-      <p> <u>Effective communication with partners:</u> We communicated regularly with the FINN Lab partners to ensure that the project remained aligned with their goals. This collaboration was key in addressing any challenges promptly and integrating feedback effectively throughout our design process.</p>
+      <p> <u>Effective communication with partners:</u> We communicated regularly with the FINN Lab partners to ensure that the project remained aligned with their goals (and they were amazing partners!). This collaboration was key in addressing any challenges promptly and integrating feedback effectively throughout our design process.</p>
       
       <p> <u>Balancing partner demands and engagement</u>: Designing an app that simultaneously met the research needs of the FINN Lab, while also maintaining an engaging and enjoyable user experience, required a lot of iteration and feedback.
       The balance between collecting accurate data and providing an enjoyable user experience was crucial.</p>
 
-      <p> <u>Importance of thorough research:</u> Conducting extensive research on existing museum apps and pinpointing user needs from interviews was vital. 
-      This groundwork helped us identify key features that could be incorporated into the app, and ensured they would align with our user’s needs.</p>
+      <p> <u>Importance of thorough research:</u> Our extensive research on existing museum apps helped us develop key features to incorporate into the app that would align with our user’s needs. Additionally, by sitting down and interviewing potential users, I learned just how crucial thorough interviews are to clarify user needs.</p>
 
-      <p> <u>Interdisciplinary collaboration:</u> With multiple designers and developers in our team, clear and consistent communication was crucial. Regular meetings and iterative feedback ensured that our design vision was accurately translated into a polished, functional product, allowing us to quickly resolve any technical challenges.</p>
+      <p> <u>Interdisciplinary collaboration:</u> With multiple designers and developers in our team, we needed to have clear and consistent communication. Regular meetings and iterative feedback ensured that our designs were accurately translated into a polished product, and allowed us to quickly resolve any technical challenges.</p>
 
       <p> <i>Made in collaboration with the DALI Lab</i></p> 
+
+      <h4 style={{fontWeight: '500'}}>What's next:</h4>     
+      <p>The app is currently finishing up frontend development through summer 2024. </p> 
+
     </section>
 
     </div>

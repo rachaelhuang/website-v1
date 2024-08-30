@@ -7,8 +7,8 @@ function Home() {
     <div> 
       <div className="splash-screen">
         <h1>Hi! I'm Rachael Huang</h1>
-        <p>A full-stack product designer who loves to create unique digital experiences.</p>
-        <a href="#my-projects" className="see-my-work-button">See my work</a>
+        <p>A full-stack product designer who creates unique digital experiences.</p>
+        <a href="#featured-projects" className="see-my-work-button">Check out my work</a>
       </div>
 
       <div id="featured-projects" className="projects-section">

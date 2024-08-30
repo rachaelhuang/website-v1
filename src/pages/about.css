@@ -1,12 +1,12 @@
 .about {
     display: flex;
     align-items: top;
-    margin: 6rem;
+    margin: 8rem;
 }
   
   .about-image {
     max-width: 25%;
-    margin-right: 2rem;
+    margin-right: 3rem;
     border-radius: 15px;
 }
   

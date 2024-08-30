@@ -71,7 +71,7 @@ function Home() {
               
               <div className="tags">
                 <span className="tag">End-to-end</span>
-                <span className="tag">Social Good</span>
+                <span className="tag">Product Design</span>
                 <span className="tag">Mobile App Development</span>
               </div>
             </div>

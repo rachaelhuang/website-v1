@@ -22,7 +22,7 @@ function Home() {
               
               <div className="story-link">
                 <p className="click-text">Click to see the story</p>
-                <img className="arrow-icon" src="/assets/loopyarrow.svg"/>
+                <img className="arrow-icon" src="/assets/loopyarrow.svg" alt="arrow"/>
               </div>
 
               <div className="tags">
@@ -33,7 +33,7 @@ function Home() {
 
             </div>
             <Link to="/ambiguityinart">
-              <img className="project-thumbnail" src="/assets/ambiguityinart/projthumbnail.png" alt="Ambiguity in Art Project" />
+              <img className="project-thumbnail" src="/assets/ambiguityinart/projthumbnail.png" alt="ArtLibs Project" />
             </Link>
           </div>
 
@@ -44,7 +44,7 @@ function Home() {
               
               <div className="story-link">
                 <p className="click-text">Click to see the story</p>
-                <img className="arrow-icon" src="/assets/loopyarrow.svg"/>
+                <img className="arrow-icon" src="/assets/loopyarrow.svg" alt="arrow"/>
               </div>
 
               <div className="tags">

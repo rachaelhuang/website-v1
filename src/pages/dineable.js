@@ -5,7 +5,7 @@ function Dineable() {
   return (
     <div className="case-study">
       <div className="dineable-banner">
-        <img src="/assets/dineable/projthumbnail.png" className="dineable-banner-image" />
+        <img src="/assets/dineable/projthumbnail.png" className="dineable-banner-image" alt="Dineable" />
         <div className="dineable-banner-content">
           <h1>Dineable: Reviews for College Dining</h1>
           <p>Giving students a platform to share reviews on campus food and access detailed nutrition information.</p>

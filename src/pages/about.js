@@ -10,11 +10,11 @@ function About() {
         <h3 className="header">Hey there! I'm Rachael. Thanks for stopping by!</h3>
         <p>
           I’m currently a sophomore at Dartmouth College, majoring in Computer Science and Digital Arts.
-          My journey as a designer began with a strong foundation in traditional art, which naturally evolved into a passion for graphic design as I became fascinated by the intersection of technology and creativity.
+          My design journey began with a strong foundation in traditional art, which naturally evolved into a fascination for graphic design as I explored the intersection of art and technology.
         </p>
         <p>
-          In college, I discovered product design, which perfectly merges my passions for art, design, and tech. With new avenues for me to channel my creativity while solving real-world problems,
-          I’m eager to continue crafting impactful user experiences that blend form and function.
+          In college, I discovered product design -- a perfect fusion of my artistic background, design thinking, and technical skills. Now, I get to channel my creativity into solving real-world problems
+          by creating impactful user experiences. I’m excited to continue turning ideas into tangible solutions that make a difference.
         </p>
       </div>
     </div>

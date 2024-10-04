@@ -21,7 +21,7 @@ function Play() {
   return (
     <div className="play">
       <h1>Graphic Design</h1>
-      <p>Graphic design has always been one of my creative outlets. Whether it's hand-drawn or digital, I love designing pretty much anything, from game icons to school merchandise. Here’s a peek at some of my recent work!</p>
+      <p>Design has always been one of my creative outlets. Whether it's hand-drawn or digital, I love designing pretty much anything, from game icons to school merchandise. Here’s a peek at some of my recent work!</p>
       <div className="image-grid">
         <div className="grid-item">
           <img src="/assets/fyt2024.png" className="merchandise" alt="First Year Trips 2024 T-shirt" />
@@ -38,9 +38,7 @@ function Play() {
         <div className="grid-item">
           <img src="/assets/pocostickers.png" className="merchandise" alt="People of Color Outdoors Stickers" />
         </div>
-        <div className="grid-item">
-          <img src="/assets/waffle-wagon.png" className="merchandise" alt="Waffle Wagon" />
-        </div>
+      
       </div>
     </div>
   );

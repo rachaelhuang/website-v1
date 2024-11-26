@@ -49,16 +49,27 @@ function Dineable() {
         <h2>Project Overview</h2>
         <p>Over the summer of 2024, I had the opportunity to participate in Dandilyonn SEEDS, a 10-week program focused on mobile app design and development.
           Our team of four was tasked with creating a mobile app that solved problems regarding dining on college campuses.
-          We named our app Dineable, a portmanteau of "dine" and "enable," to reflect our mission of empowering students to make informed decisions about their meals.
+          We named our app Dineable, a combination of "dine" and "enable," to reflect our mission of empowering students to make informed decisions about their meals.
+          I was responsible for designing the UI of the app, and then implementing my designs using React Native alongside the rest of my team.
         </p>
         
         <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
       </section>
 
       <section id="product-demo" className="final-product-teaser">
-        <p>The rest of the case study is under construction. Please check back later! :)</p>
-      </section>
+        <p></p>
+        <p>This case study is under construction, but in the meantime, check out the Figma!</p>
 
+        <iframe 
+          style={{
+            border: '1px solid rgba(0, 0, 0, 0.1)',
+            width: '800px',
+            height: '450px',
+          }}
+          src="https://embed.figma.com/design/gDTdQnQjCu3Xi8EV08m78D/Dineable---Public?node-id=1504-5223&embed-host=share"
+          allowFullScreen
+        ></iframe>
+      </section>
 
     </div>
   );

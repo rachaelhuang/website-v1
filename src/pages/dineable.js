@@ -73,6 +73,6 @@ function Dineable() {
 
     </div>
   );
-}
+} 
 
 export default Dineable;

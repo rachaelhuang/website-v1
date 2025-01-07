@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <p className="fancy-text">Thanks for being here!</p>
-        <p>Designed and coded by Rachael Huang. Made possible by React and lots of snack breaks. :)</p>
+        <p>Designed and coded by me. Made possible by React and lots of snack breaks. :)</p>
         <p>
           Let's get in touch: 
           <a href="https://www.linkedin.com/in/rachaelhuang/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 

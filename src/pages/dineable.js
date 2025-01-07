@@ -69,6 +69,7 @@ function Dineable() {
         <h2 style={{ fontStyle: 'italic', fontSize: '30px'}}>How might we...</h2>
         <p>improve access to nutritional information within college campus dining halls in order to empower students to make healthier food choices?
       </p>
+      
       </section>
 
       <section className="industry-research">
@@ -89,6 +90,14 @@ function Dineable() {
         <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
       </section>
 
+      <section id='ideation' className="ideation">
+        <h3>IDEATION</h3>
+        <h2>Visualizing the app flow</h2>
+
+        <p>From here, I defined the user flow and began the first iteration of screens.
+          The first aspect of the app that I focused on was creating a list of dining hall food options that would allow students to quickly glance at relevant nutritional information.</p>
+        <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
+      </section>
 
       <section id="product-demo" className="final-product-teaser">
         <p>The rest of this case study is under construction, but in the meantime, check out the Figma!</p>

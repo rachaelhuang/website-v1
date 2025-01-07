@@ -95,6 +95,7 @@ function Dineable() {
 
         <div className="figma-embed-wrapper"> 
           <iframe 
+            title="Dineable Figma pages"
             style={{
               border: '1px solid rgba(0, 0, 0, 0.1)',
               width: '800px',

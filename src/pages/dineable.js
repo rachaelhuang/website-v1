@@ -49,16 +49,49 @@ function Dineable() {
         <h2>Project Overview</h2>
         <p>Over the summer of 2024, I had the opportunity to participate in Dandilyonn SEEDS, a 10-week program focused on mobile app design and development.
           Our team of four was tasked with creating a mobile app that solved problems regarding dining on college campuses.
-          We named our app Dineable, a combination of "dine" and "enable," to reflect our mission of empowering students to make informed decisions about their meals.
-          I was responsible for designing the UI of the app, and then implementing my designs using React Native alongside the rest of my team.
+          I was responsible for designing the UI of the app as well as any necessary graphics, and then implementing my designs using React Native alongside the rest of my team.
         </p>
-        
         <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
       </section>
 
+      <section className="partner-requests">
+        <h3>THE PROBLEM</h3>
+        <h2>College students are busy, making nutrition a low priority  </h2>
+        <p>As college students, eating outside of campus is often not financially viable, leading most students to eat meals at campus dining halls.
+          However, many students feel <u>dissatisfied with dining hall options</u> and are concerned about food waste.
+          At the same time, students are increasingly focused on <u>eating healthy on campus</u>, seeking nutritious options that support their academic and physical well-being.
+        </p>
+
+
+      </section>
+
+      <section id="problem-statement" className="problem-statement">
+        <h2 style={{ fontStyle: 'italic', fontSize: '30px'}}>How might we...</h2>
+        <p>improve access to nutritional information within college campus dining halls in order to empower students to make healthier food choices?
+      </p>
+      </section>
+
+      <section className="industry-research">
+        <h3>USER RESEARCH</h3>
+        <h2>Understanding college students' dining habits</h2>
+        <p> We interviewed 8 college students attending different universities across the U.S. to understand their individual dining habits and preferences.
+        We found several common issues: most students experienced long waits in dining halls or struggled to choose nutritious options on campus that tasted good.
+        We also learned that students often use review apps or group chats to hear about dining options, but there is no platform specifically meant for college dining halls.
+        </p>
+
+        <p>After comprehensive industry research of existing food review apps and examining their user experience, we identified three main feature buckets of our project:</p>
+        <div style= {{paddingLeft: '20px'}} >
+          <p><b>1. Detailed nutritional information of dining hall dishes</b></p>
+          <p><b>2. Filtered search system, including user-inputted food preferences</b></p>
+          <p><b>3. Ability to write reviews that include rankings of food taste and health</b></p>
+        </div>
+
+        <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '2rem 0', transform: 'scaleY(0.7)' }} />
+      </section>
+
+
       <section id="product-demo" className="final-product-teaser">
-        <p></p>
-        <p>This case study is under construction, but in the meantime, check out the Figma!</p>
+        <p>The rest of this case study is under construction, but in the meantime, check out the Figma!</p>
 
         <iframe 
           style={{
@@ -70,7 +103,7 @@ function Dineable() {
           allowFullScreen
         ></iframe>
       </section>
-
+      
     </div>
   );
 } 

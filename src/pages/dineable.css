@@ -84,3 +84,12 @@
     font-size: 1rem;
     margin-bottom: 0.5rem;
   }
+
+  .problem-statement {
+    background-color: #f6d4af;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 4rem;
+  }

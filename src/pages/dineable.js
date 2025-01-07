@@ -93,15 +93,18 @@ function Dineable() {
       <section id="product-demo" className="final-product-teaser">
         <p>The rest of this case study is under construction, but in the meantime, check out the Figma!</p>
 
-        <iframe 
-          style={{
-            border: '1px solid rgba(0, 0, 0, 0.1)',
-            width: '800px',
-            height: '450px',
-          }}
-          src="https://embed.figma.com/design/gDTdQnQjCu3Xi8EV08m78D/Dineable---Public?node-id=1504-5223&embed-host=share"
-          allowFullScreen
-        ></iframe>
+        <div className="figma-embed-wrapper"> 
+          <iframe 
+            style={{
+              border: '1px solid rgba(0, 0, 0, 0.1)',
+              width: '800px',
+              height: '450px',
+            }}
+            src="https://embed.figma.com/design/gDTdQnQjCu3Xi8EV08m78D/Dineable---Public?node-id=1504-5223&embed-host=share"
+            allowFullScreen
+          ></iframe>
+        </div>
+
       </section>
       
     </div>

@@ -8,7 +8,7 @@ function App() {
         <p className="moved-eyebrow">Rachael Huang</p>
         <h1 className="moved-heading">This site has moved.</h1>
         <p className="moved-body">
-          I'm working on a new portfolio — check back soon.
+          I'm working on a new portfolio. Check back soon!
         </p>
       </div>
     </div>
